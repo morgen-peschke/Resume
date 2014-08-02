@@ -1,0 +1,107 @@
+% Change tags for mustache {{=<< >>=}}
+% LaTeX resume using res.cls
+% Downloaded from http://www.rpi.edu/dept/arc/training/latex/resumes/
+\documentclass[line,margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+\usepackage{hyperref}
+
+% Used to standardize formatting on job entries (and save typing). Used as
+% follows:
+% \begin{job}{title}{company}{location}{time}
+% \item accomplishment 1
+%   ...
+% \item accomplishment n
+% \end{job}
+\newenvironment{job}[4]
+{{\textbf{#1}} \hfill #4\\
+  \textsc{#2} \hfill #3\vspace{0.5em}
+  \begin{itemize} \itemsep -1pt}
+  {\end{itemize}}
+
+\begin{document}
+
+\name{<<name>>}
+% \address used up to three times to have up to three lines of address
+\address{
+  <<#contact>>
+  <<#address>><<street>>, <<city>>, <<state>> <<zip>><</address>> \\
+  <<phone>> - \href{mailto:<<email>>}{<<email>>} \\  
+  <<#websites>>
+  \url{ <<url>> } \\
+  <</websites>>
+  <</contact>>
+}
+
+\begin{resume}
+  \section{SKILLS \\ LANGUAGES}
+  <<#skills>> 
+  \begin{tabular}{ll}
+    <<#meta>>
+    <<#first>>Skills:<</first>> & <<row>>\\
+    <</meta>> \\
+
+    <<#languages>>
+    <<#first>>Languages:<</first>> & <<row>>\\
+    <</languages>> \\
+
+    <<#frameworks>>
+    <<#first>>Frameworks:<</first>> & <<row>>\\
+    <</frameworks>> \\
+  \end{tabular}
+  <</skills>>
+
+  \section{PROJECTS}
+  <<#projects>>
+  \begin{job}
+    {<<title>>}
+    {<<language>>}
+    <<#websites>>
+    {\href{<<url>>}{<<label>>}}
+    <</websites>>
+    <<#bulletpoints>>\item <<.>><</bulletpoints>>
+  \end{job}  
+  <</projects>>
+  
+  \section{EXPERIENCE \\ HIGHLIGHTS}
+  <<#jobs>>
+  \begin{job}
+    {<<title>>}
+    {<<company>> }
+    {<<#location>><<city>>, <<state>><</location>>}
+    {<<#dates>><<from>> - <<to>><</dates>>}
+    
+    <<#accomplishments>>
+  \item
+    <<summary>>
+    <<#details>>
+    \begin{itemize}
+    \item[$\star$] <<.>>
+    \end{itemize}
+    <</details>>
+    <</accomplishments>>
+  \end{job}
+  <</jobs>>  
+  
+  \section{EDUCATION}
+  <<#education>>
+  \begin{job}
+    {<<degree>>}
+    <<#college>>
+    {<<name>>}
+    {<<city>>, <<state>>}
+    {<<date>>}
+    <</college>>
+    
+  \item {\sl\bf Relevant Coursework:}\\
+    <<#courses>><<.>> \\<</courses>>
+  \item {\sl\bf Projects:}\\
+    <<#projects>>
+    \href{<<url>>}{<<summary>>}\\
+    <</projects>>
+  \end{job}
+  <</education>>
+  
+\end{resume}
+\end{document}
