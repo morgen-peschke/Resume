@@ -27,7 +27,7 @@
 \address{
   <<#contact>>
   <<#address>><<street>>, <<city>>, <<state>> <<zip>><</address>> \\
-  <<phone>> - \href{mailto:<<email>>}{<<email>>} \\  
+  <<phone>> - \href{mailto:<<email>>}{<<email>>} \\
   <<#websites>>
   \url{ <<url>> } \\
   <</websites>>
@@ -36,7 +36,7 @@
 
 \begin{resume}
   \section{SKILLS \\ LANGUAGES}
-  <<#skills>> 
+  <<#skills>>
   \begin{tabular}{ll}
     <<#meta>>
     <<#first>>Skills:<</first>> & <<row>>\\
@@ -58,12 +58,12 @@
     {<<title>>}
     {<<language>>}
     <<#websites>>
-    {\href{<<url>>}{<<label>>}}
+    {\href{<<url>>}{<<short>>}}
     <</websites>>
     <<#bulletpoints>>\item <<.>><</bulletpoints>>
-  \end{job}  
+  \end{job}
   <</projects>>
-  
+
   \section{EXPERIENCE \\ HIGHLIGHTS}
   <<#jobs>>
   \begin{job}
@@ -71,7 +71,7 @@
     {<<company>> }
     {<<#location>><<city>>, <<state>><</location>>}
     {<<#dates>><<from>> - <<to>><</dates>>}
-    
+
     <<#accomplishments>>
   \item
     <<summary>>
@@ -82,8 +82,8 @@
     <</details>>
     <</accomplishments>>
   \end{job}
-  <</jobs>>  
-  
+  <</jobs>>
+
   \section{EDUCATION}
   <<#education>>
   \begin{job}
@@ -93,15 +93,15 @@
     {<<city>>, <<state>>}
     {<<date>>}
     <</college>>
-    
+
   \item {\sl\bf Relevant Coursework:}\\
     <<#courses>><<.>> \\<</courses>>
   \item {\sl\bf Projects:}\\
     <<#projects>>
-    \href{<<url>>}{<<summary>>}\\
+    \href{<<url>>}{<<label>>}\\
     <</projects>>
   \end{job}
   <</education>>
-  
+
 \end{resume}
 \end{document}

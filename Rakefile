@@ -39,7 +39,7 @@ class GenerateResume
   def self.json
     @@data ||= self.mark_first_and_last JSON.parse(IO.read("resume.json"))
   end
-  
+
   def self.latex(template)
     begin
       latex_source = MustacheToLatex.render(IO.read(template), self.json)
@@ -61,7 +61,7 @@ task :default do
   puts MustacheToLatex.render "latex: {{escape}}", 'escape' => latex
 end
 
-file 'latex' => %w(resume.json latex/template.tex.mustache latex/res.cls) do |t|
+file 'resume.pdf' => %w(resume.json latex/template.tex.mustache latex/res.cls) do |t|
   GenerateResume.latex ENV['SRC'] || ENV['SOURCE'] || 'latex/template.tex.mustache'
 end
 

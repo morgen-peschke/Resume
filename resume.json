@@ -2,71 +2,80 @@
   "contact": { "email": "morgen.peschke@gmail.com",
 	       "phone": "(408) 724-0713",
 	       "address": { "street": "1817 Watch House Circle South",
-			    "city": "Severn",
-			    "state": "MD",
-			    "zip": "21144"
+			    "city":   "Severn",
+			    "state":  "MD",
+			    "zip":    "21144"
 			  },
-	       "websites": [ { "label":"linkedin",
-			       "url":"http://www.linkedin.com/in/morgenpeschke"
+	       "websites": [ { "label": "linkedin",
+                               "short": "www.linkedin.com/in/morgenpeschke",
+			       "url":   "http://www.linkedin.com/in/morgenpeschke"
 			     },
-			     { "label":"github",
-			       "url": "https://github.com/morgen-peschke"}
+			     { "label": "github",
+                               "short": "github.com/morgen-peschke",
+			       "url":   "https://github.com/morgen-peschke"}
 			   ]
 	     },
-  "skills": { "meta": [{"row":"Web Programming, Database Design, OOP"},
-		       {"row":"POSIX and Windows programming APIs"},
-		       {"row":"Basic Linux administration, Parallel programming"}
+  "skills": { "meta": [{"row": "Web Programming, Database Design, OOP"},
+		       {"row": "POSIX and Windows programming APIs"},
+		       {"row": "Basic Linux administration, Parallel programming"}
 		      ],
 	      "languages": [{"row": "Ruby, HTML, JavaScript, CSS, Bash"},
 			    {"row": "C/C++, Perl, Python, MySQL"}
 			   ],
 	      "frameworks": [{"row": "Ruby on Rails"}]
 	    },
-  "projects": [ { "title": "Table Name to Class Gem",
+  "projects": [ { "title":    "Table Name to Class Gem",
 		  "language": "Ruby - ActiveRecord",
-		  "websites": [ {"label":"rubygems.org/gems/table-name-to-class",
-				 "url":"http://rubygems.org/gems/table-name-to-class"},
-				{"label":"github.com/morgen-peschke/table-name-to-class",
-				 "url":"https://github.com/morgen-peschke/table-name-to-class"}
+		  "websites": [ {"label": "rubygems.org",
+                                 "short": "rubygems.org/gems/table-name-to-class",
+				 "url":   "http://rubygems.org/gems/table-name-to-class"
+                                },
+				{"label": "github",
+                                 "short": "github.com/morgen-peschke/table-name-to-class",
+				 "url":   "https://github.com/morgen-peschke/table-name-to-class"
+                                }
 			      ],
 		  "bulletpoints": [ "Resolves ActiveRecord database table names to the associated ActiveRecord class.",
 				    "Correctly handles namespaced tables, and overridden table names."
 				  ]
 		},
-		{ "title": "Parsed Attributes Gem",
+		{ "title":    "Parsed Attributes Gem",
 		  "language": "Ruby",
-		  "websites": [ { "label":"rubygems.org/gems/parsed-attributes",
-				  "url":"https://rubygems.org/gems/parsed-attributes"},
-				{ "label":"github.com/morgen-peschke/parsed-attributes",
-				  "url":"https://github.com/morgen-peschke/parsed-attributes"}
-		  ],
+		  "websites": [ { "label": "rubygems.org",
+                                  "short": "rubygems.org/gems/parsed-attributes",
+				  "url":   "https://rubygems.org/gems/parsed-attributes"
+                                },
+				{ "label": "github",
+                                  "short": "github.com/morgen-peschke/parsed-attributes",
+				  "url":   "https://github.com/morgen-peschke/parsed-attributes"
+                                }
+		              ],
 		  "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 		}
 	      ],
   "jobs": [ { "company": "CallTrackingMetrics",
-	      "title": "Software Engineer",
+	      "title":   "Software Engineer",
 	      "location": { "city": "Severn",   "state": "MD"},
 	      "dates":    { "from": "Feb 2014", "to": "Jul 2014"},
 	      "accomplishments": [
-		  {"summary": "Designed, implemented, and maintained the Custom Display Formatting feature.",
-		   "details": [ "Solved a long-standing issue with numbers that have a non-standard representation",
-				"Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript."
-			      ]
-		  },
-		  {"summary": "Designed and implemented integration with Box.net via OAuth2",
-		   "details": [ "Enabled customers to bulk export call audio" ]
-		  },
-		  {"summary": "Significantly expanded test suite coverage."
-		  }
+		{"summary": "Designed, implemented, and maintained the Custom Display Formatting feature.",
+		 "details": [ "Solved a long-standing issue with numbers that have a non-standard representation",
+			      "Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript."
+			    ]
+		},
+		{"summary": "Designed and implemented integration with Box.net via OAuth2",
+		 "details": [ "Enabled customers to bulk export call audio" ]
+		},
+		{"summary": "Significantly expanded test suite coverage."}
 	      ]
 	    },
 	    { "company": "ManTech International",
-	      "title": "Software Engineer",
+	      "title":   "Software Engineer",
 	      "location": { "city": "Hanover",  "state": "MD"},
 	      "dates":    { "from": "Jun 2013", "to": "Feb 2014"},
 	      "accomplishments": [
-		  {"summary": "Completed the MCIS Advanced Cyber Training Program (ACTP)" },
-		  {"summary": "Lead initial design and development of question-based recruiting website"}
+		{"summary": "Completed the MCIS Advanced Cyber Training Program (ACTP)" },
+		{"summary": "Lead initial design and development of question-based recruiting website"}
 	      ]
 	    },
 	    { "company": "BYU-I, Computer Science Department",
@@ -74,41 +83,48 @@
 	      "location": { "city": "Rexburg",  "state": "ID"},
 	      "dates":    { "from": "Jan 2012", "to": "Jun 2013"},
 	      "accomplishments": [
-		  {"summary": "Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor"
-		  },
-		  {"summary": "Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course"
-		  }
+		{"summary": "Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor"},
+		{"summary": "Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course"}
 	      ]
 	    },
 	    { "company": "Platinum Roofing",
-	      "title": "Sales Development",
+	      "title":   "Sales Development",
 	      "location": { "city": "San Jose", "state": "CA"},
 	      "dates":    { "from": "Dec 2009", "to": "May 2010"},
 	      "accomplishments": [
-		  {"summary": "Used Python and COM to connect an Excel call sheet to Google Maps and sorted them by driving distance to improve marketing efficiency"},
-		  {"summary": "Uncovered evidence that the company had been sold a call sheet that was more than 3 years out-of-date"},
-		  {"summary": "Applied scripting technologies to work-flow and improved call speed by 30%"},
-		  {"summary": "Total savings to company: over $6,280"}
+		{"summary": "Used Python and COM to connect an Excel call sheet to Google Maps and sorted them by driving distance to improve marketing efficiency"},
+		{"summary": "Uncovered evidence that the company had been sold a call sheet that was more than 3 years out-of-date"},
+		{"summary": "Applied scripting technologies to work-flow and improved call speed by 30%"},
+		{"summary": "Total savings to company: over $6,280"}
+	      ]
+	    },
+            { "company": "Apple Computer",
+	      "title":   "Specialist",
+	      "location": { "city": "Santa Rosa", "state": "CA"},
+	      "dates":    { "from": "Jan 2008",   "to": "Jun 2009"},
+	      "accomplishments": [
+		{"summary": "Leveraged AppleScript to enable the repair technicians to provide limited data recovery services on damaged drives"}
 	      ]
 	    }
 	  ],
   "education": {
-      "degree": "Bachelor of Science: Computer Science",
-      "college": { "name": "Brigham Young University - Idaho (BYU-I)",
-		   "city": "Rexburg",
-		   "state": "ID",
-		   "date": "Jul 2013"
-		 },
-      "courses": ["Algorithms and Complexity, Web Engineering, Networking",
-		  "Operating Systems, Software Engineering, Database Design"
-		 ],
-      "projects": [ {"summary": "Genetic Optimization of the Ant Colony family of algorithms",
-		     "url": "https://github.com/morgen-peschke/ant-colony-optimizer"
-		    },
-		    {"summary": "2D Boolean Network implementation of Conway's Game of Life",
-		     "url": "https://github.com/morgen-peschke/conway-boolean-network"
-		    }
-		  ]
+    "degree": "Bachelor of Science: Computer Science",
+    "college": { "name":  "Brigham Young University - Idaho (BYU-I)",
+		 "city":  "Rexburg",
+		 "state": "ID",
+		 "date":  "Jul 2013"
+	       },
+    "courses": ["Algorithms and Complexity, Web Engineering, Networking",
+		"Operating Systems, Software Engineering, Database Design"
+	       ],
+    "projects": [ {"label": "Genetic Optimization of the Ant Colony family of algorithms",
+                   "short": "github.com/morgen-peschke/ant-colony-optimizer",
+		   "url":   "https://github.com/morgen-peschke/ant-colony-optimizer"
+		  },
+		  {"label": "2D Boolean Network implementation of Conway's Game of Life",
+                   "short": "github.com/morgen-peschke/conway-boolean-network",
+		   "url":   "https://github.com/morgen-peschke/conway-boolean-network"
+		  }
+		]
   }
 }
-
