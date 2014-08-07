@@ -55,11 +55,7 @@ class GenerateResume
   end
 end
 
-task :default do
-  latex =  '# $ % & _ { } \\ ^ ~'
-  puts "latex: #{latex}"
-  puts MustacheToLatex.render "latex: {{escape}}", 'escape' => latex
-end
+task default: %w(resume.pdf)
 
 file 'resume.pdf' => %w(resume.json latex/template.tex.mustache latex/res.cls) do |t|
   GenerateResume.latex ENV['SRC'] || ENV['SOURCE'] || 'latex/template.tex.mustache'
