@@ -1,10 +1,10 @@
 { "name":"Morgen Peschke",
   "contact": { "email": "morgen.peschke@gmail.com",
 	       "phone": "(408) 724-0713",
-	       "address": { "street": "1817 Watch House Circle South",
-			    "city":   "Severn",
-			    "state":  "MD",
-			    "zip":    "21144"
+	       "address": { "street": "13420 Sycamore Dr",
+			    "city":   "Morgan Hill",
+			    "state":  "CA",
+			    "zip":    "95037"
 			  },
 	       "websites": [ { "label": "linkedin",
                                "short": "www.linkedin.com/in/morgenpeschke",
