@@ -63,7 +63,7 @@
 			      "Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript."
 			    ]
 		},
-		{"summary": "Designed and implemented integration with Box.net via OAuth2",
+		{"summary": "Designed and implemented integration with Box cloud storage via OAuth2",
 		 "details": [ "Enabled customers to bulk export call audio" ]
 		},
 		{"summary": "Significantly expanded test suite coverage."}
