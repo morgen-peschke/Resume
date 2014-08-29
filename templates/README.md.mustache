@@ -1,4 +1,4 @@
-# {{name}}
+# {{name}} #
 
 {{#contact}}
 {{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}
@@ -7,7 +7,8 @@
 
 {{email}}
 
-### Websites
+### Websites ###
+
 {{#websites}}
 -  {{url}}
 {{/websites}}
@@ -15,14 +16,18 @@
 
 
 {{#skills}}
-# SKILLS & LANGUAGES
-### SKILLS
+
+# Skills & Languages #
+
+#### Skills ####
+
 {{#meta}}
 {{row}}
 
 {{/meta}}
 
-### PROGRAMMING LANGUAGES
+#### Programming Languages ####
+
 {{#languages}}
 {{row}}
 
@@ -30,19 +35,26 @@
 {{/skills}}
 
 
-# OPEN SOURCE PROJECTS
+# Open Source Projects #
+
 {{#projects}}
-#### {{title}} :: {{#websites}}[{{label}}]({{url}}) {{/websites}}
+
+#### {{title}} :: {{#websites}}[{{label}}]({{url}}) {{/websites}} ####
+
 {{#bulletpoints}}
  * {{.}}
 {{/bulletpoints}}
 
 {{/projects}}
 
-# WORK EXPERIENCE
+# WORK EXPERIENCE #
+
 {{#jobs}}
-### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
-#### {{title}}
+
+#### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}} ####
+
+##### {{title}} #####
+
 {{#accomplishments}}
  * {{summary}}
  {{#details}}
@@ -52,11 +64,16 @@
 
 {{/jobs}}
 
-# EDUCATION
+# EDUCATION #
+
 {{#education}}
-### {{degree}}
+
+#### {{degree}} ####
+
 {{#college}}{{name}} ({{date}}){{/college}}
-##### Courses
+
+##### Courses #####
+
 {{#courses}}
 {{.}}
 
