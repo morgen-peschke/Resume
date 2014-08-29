@@ -1,0 +1,65 @@
+CONTACT INFORMATION
+-------------------
+Name: {{name}}
+{{#contact}}
+Address: {{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}
+Phone: {{phone}}
+Email: {{email}}
+{{#websites}}
+Website: {{url}}
+{{/websites}}
+{{/contact}}
+
+
+{{#skills}}
+SKILLS
+------
+{{#meta}}{{row}}, {{/meta}}
+
+PROGRAMMING LANGUAGES
+---------------------
+{{#languages}}{{row}}, {{/languages}}
+{{/skills}}
+
+
+OPENS SOURCE PROJECTS
+---------------------
+{{#projects}}
+Title: {{title}}
+{{#websites}}
+Website: {{url}}
+{{/websites}}
+{{#bulletpoints}}
+ * {{.}}
+{{/bulletpoints}}
+
+{{/projects}}
+
+WORK EXPERIENCE
+---------------
+{{#jobs}}
+{{#dates}}
+From: {{from}}
+To: {{to}}
+{{/dates}}
+Company: {{company}}
+Title: {{title}}
+{{#accomplishments}}
+ * {{summary}}
+ {{#details}}
+   - {{.}}
+ {{/details}}
+{{/accomplishments}}
+
+{{/jobs}}
+
+EDUCATION
+---------
+{{#education}}
+Degree: {{degree}}
+{{#college}}
+From: {{name}}
+Date: {{date}}
+{{/college}}
+Courses: {{#courses}}{{.}} {{/courses}}
+{{/education}}

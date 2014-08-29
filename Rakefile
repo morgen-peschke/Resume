@@ -2,6 +2,9 @@ require 'fileutils'
 require 'mustache'
 require 'json'
 
+SOURCE  = ENV['SRC'] || ENV['SOURCE']
+OUTFILE = ENV['OUT'] || ENV['OUTFILE']
+
 class MustacheToLatex < Mustache
   def escapeHTML(str)
     str.gsub!(/\\/, '\\t-e-x-t-b-a-c-k-s-l-a-s-h')
@@ -40,25 +43,38 @@ class GenerateResume
     @@data ||= self.mark_first_and_last JSON.parse(IO.read("resume.json"))
   end
 
-  def self.latex(template)
-    begin
-      latex_source = MustacheToLatex.render(IO.read(template), self.json)
-      FileUtils.cd('latex') do
-        IO.write('temporary_resume.tex', latex_source)
-        system('pdflatex', '-halt-on-error', '-output-format', 'pdf', 'temporary_resume.tex')
-        FileUtils.mv 'temporary_resume.pdf', '../resume.pdf'
-        FileUtils.rm Dir['temporary_resume.*']
-      end
-    rescue StandardError => e
-      STDERR.puts "#{e.class}: #{e.message}"
+  def self.simple(template, outfile)
+    source = Mustache.render(IO.read(template), self.json)
+    IO.write(outfile, source)
+  rescue StandardError => e
+    STDERR.puts "#{e.class}: #{e.message}"
+  end
+
+  def self.latex(template, outfile)
+    latex_source = MustacheToLatex.render(IO.read(template), self.json)
+    FileUtils.cd('latex') do
+      IO.write('temporary_resume.tex', latex_source)
+      system('pdflatex', '-halt-on-error', '-output-format', 'pdf', 'temporary_resume.tex')
+      FileUtils.mv 'temporary_resume.pdf', "../#{outfile}"
+      FileUtils.rm Dir['temporary_resume.*']
     end
+  rescue StandardError => e
+    STDERR.puts "#{e.class}: #{e.message}"
   end
 end
 
-task default: %w(resume.pdf)
+task default: %w(resume.pdf resume.txt README.md)
 
-file 'resume.pdf' => %w(resume.json latex/template.tex.mustache latex/res.cls) do |t|
-  GenerateResume.latex ENV['SRC'] || ENV['SOURCE'] || 'latex/template.tex.mustache'
+file 'resume.pdf' => %w(resume.json latex/template.tex.mustache latex/res.cls) do
+  GenerateResume.latex SOURCE || 'latex/template.tex.mustache', OUTFILE || 'resume.pdf'
+end
+
+file 'README.md' => %w(resume.json markdown/template.md.mustache) do
+  GenerateResume.simple SOURCE || 'markdown/template.md.mustache', OUTFILE || 'resume.md'
+end
+
+file 'resume.txt' => 'README.md' do
+  FileUtils.cp 'README.md', 'resume.txt'
 end
 
 %w(resume.json latex/template.tex.mustache latex/res.cls).each do |extern|
