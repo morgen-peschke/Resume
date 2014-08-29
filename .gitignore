@@ -1,0 +1,3 @@
+# Ignore editor / OS junk files
+*~
+.DS_Store
