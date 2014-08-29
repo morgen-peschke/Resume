@@ -7,6 +7,7 @@
 
 {{email}}
 
+*Websites*
 {{#websites}}
 -  {{url}}
 {{/websites}}
@@ -14,13 +15,14 @@
 
 
 {{#skills}}
-# SKILLS
+# SKILLS & LANGUAGES
+### SKILLS
 {{#meta}}
-{{row}},
+{{row}}
 
 {{/meta}}
 
-## PROGRAMMING LANGUAGES
+### PROGRAMMING LANGUAGES
 {{#languages}}
 {{row}}
 
@@ -58,5 +60,8 @@
 ### {{degree}}
 {{#college}}{{name}} ({{date}}){{/college}}
 ##### Courses
-{{#courses}}{{.}} {{/courses}}
+{{#courses}}
+{{.}}
+
+{{/courses}}
 {{/education}}

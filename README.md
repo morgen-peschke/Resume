@@ -6,19 +6,21 @@
 
 morgen.peschke@gmail.com
 
+*Websites*
 -  http://www.linkedin.com/in/morgenpeschke
 -  https://github.com/morgen-peschke
 
 
-# SKILLS
-Web Programming, Database Design, OOP,
+# SKILLS & LANGUAGES
+### SKILLS
+Web Programming, Database Design, OOP
 
-POSIX and Windows programming APIs,
+POSIX and Windows programming APIs
 
-Basic Linux administration, Parallel programming,
+Basic Linux administration, Parallel programming
 
 
-## PROGRAMMING LANGUAGES
+### PROGRAMMING LANGUAGES
 Ruby, HTML, JavaScript, CSS, Bash
 
 C/C++, Perl, Python, MySQL
@@ -74,4 +76,7 @@ https://github.com/morgen-peschke/parsed-attributes
 ### Bachelor of Science: Computer Science
 Brigham Young University - Idaho (BYU-I) (Jul 2013)
 ##### Courses
-Algorithms and Complexity, Web Engineering, Networking Operating Systems, Software Engineering, Database Design 
+Algorithms and Complexity, Web Engineering, Networking
+
+Operating Systems, Software Engineering, Database Design
+
