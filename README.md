@@ -6,7 +6,7 @@
 
 morgen.peschke@gmail.com
 
-*Websites*
+### Websites
 -  http://www.linkedin.com/in/morgenpeschke
 -  https://github.com/morgen-peschke
 
@@ -28,15 +28,11 @@ C/C++, Perl, Python, MySQL
 
 
 ## OPEN SOURCE PROJECTS
-#### Table Name to Class Gem
-http://rubygems.org/gems/table-name-to-class
-https://github.com/morgen-peschke/table-name-to-class
+### Table Name to Class Gem[rubygems.org](http://rubygems.org/gems/table-name-to-class)[github](https://github.com/morgen-peschke/table-name-to-class)
  * Resolves ActiveRecord database table names to the associated ActiveRecord class.
  * Correctly handles namespaced tables, and overridden table names.
 
-#### Parsed Attributes Gem
-https://rubygems.org/gems/parsed-attributes
-https://github.com/morgen-peschke/parsed-attributes
+### Parsed Attributes Gem[rubygems.org](https://rubygems.org/gems/parsed-attributes)[github](https://github.com/morgen-peschke/parsed-attributes)
  * Provides simplified handling of parsed data through linked attributes.
 
 

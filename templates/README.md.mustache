@@ -7,7 +7,7 @@
 
 {{email}}
 
-*Websites*
+### Websites
 {{#websites}}
 -  {{url}}
 {{/websites}}
@@ -32,10 +32,7 @@
 
 ## OPEN SOURCE PROJECTS
 {{#projects}}
-#### {{title}}
-{{#websites}}
-{{url}}
-{{/websites}}
+### {{title}}{{#websites}}[{{label}}]({{url}}){{/websites}}
 {{#bulletpoints}}
  * {{.}}
 {{/bulletpoints}}
