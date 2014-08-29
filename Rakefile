@@ -5,6 +5,10 @@ require 'json'
 SOURCE  = ENV['SRC'] || ENV['SOURCE']
 OUTFILE = ENV['OUT'] || ENV['OUTFILE']
 
+LATEX_SOURCE  = SOURCE || 'templates/standard.tex.mustache'
+TXT_SOURCE    = SOURCE || 'templates/simple.txt.mustache'
+README_SOURCE = SOURCE || 'templates/README.md.mustache'
+
 class MustacheToLatex < Mustache
   def escapeHTML(str)
     str.gsub!(/\\/, '\\t-e-x-t-b-a-c-k-s-l-a-s-h')
@@ -65,16 +69,16 @@ end
 
 task default: %w(resume.pdf resume.txt README.md)
 
-file 'resume.pdf' => %w(resume.json latex/template.tex.mustache latex/res.cls) do
-  GenerateResume.latex SOURCE || 'latex/template.tex.mustache', OUTFILE || 'resume.pdf'
+file 'resume.pdf' => ['resume.json', 'latex/res.cls', LATEX_SOURCE] do
+  GenerateResume.latex LATEX_SOURCE, OUTFILE || 'resume.pdf'
 end
 
-file 'README.md' => %w(resume.json markdown/template.md.mustache) do
-  GenerateResume.simple SOURCE || 'markdown/template.md.mustache', OUTFILE || 'resume.md'
+file 'resume.txt' => ['resume.json', TXT_SOURCE] do
+  GenerateResume.simple TXT_SOURCE, OUTFILE || 'resume.txt'
 end
 
-file 'resume.txt' => 'README.md' do
-  FileUtils.cp 'README.md', 'resume.txt'
+file 'README.md' => ['resume.json', README_SOURCE] do
+  GenerateResume.simple README_SOURCE, OUTFILE || 'README.md'
 end
 
 %w(resume.json latex/template.tex.mustache latex/res.cls).each do |extern|

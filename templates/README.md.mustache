@@ -1,0 +1,56 @@
+# {{name}}
+
+{{#contact}}
+{{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}
+
+{{phone}}
+
+{{email}}
+
+{{#websites}}
+-  {{url}}
+{{/websites}}
+{{/contact}}
+
+
+{{#skills}}
+# SKILLS
+{{#meta}}{{row}}, {{/meta}}
+
+## PROGRAMMING LANGUAGES
+{{#languages}}
+{{row}}
+{{/languages}}
+{{/skills}}
+
+
+## OPEN SOURCE PROJECTS
+{{#projects}}
+#### Title: {{title}}
+{{#websites}}
+{{url}}
+{{/websites}}
+{{#bulletpoints}}
+ * {{.}}
+{{/bulletpoints}}
+
+{{/projects}}
+
+# WORK EXPERIENCE
+{{#jobs}}
+### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
+{{title}}
+{{#accomplishments}}
+ * {{summary}}
+ {{#details}}
+   - {{.}}
+ {{/details}}
+{{/accomplishments}}
+
+{{/jobs}}
+
+# EDUCATION
+{{#education}}
+{{degree}} from {{#college}}{{name}} ({{date}}){{/college}}
+Courses: {{#courses}}{{.}} {{/courses}}
+{{/education}}
