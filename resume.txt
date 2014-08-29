@@ -17,7 +17,7 @@ PROGRAMMING LANGUAGES
 Ruby, HTML, JavaScript, CSS, Bash, C/C++, Perl, Python, MySQL, 
 
 
-OPENS SOURCE PROJECTS
+OPEN SOURCE PROJECTS
 ---------------------
 Title: Table Name to Class Gem
 Website: http://rubygems.org/gems/table-name-to-class

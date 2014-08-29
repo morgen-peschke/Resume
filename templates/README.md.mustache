@@ -15,18 +15,22 @@
 
 {{#skills}}
 # SKILLS
-{{#meta}}{{row}}, {{/meta}}
+{{#meta}}
+{{row}},
+
+{{/meta}}
 
 ## PROGRAMMING LANGUAGES
 {{#languages}}
 {{row}}
+
 {{/languages}}
 {{/skills}}
 
 
 ## OPEN SOURCE PROJECTS
 {{#projects}}
-#### Title: {{title}}
+#### {{title}}
 {{#websites}}
 {{url}}
 {{/websites}}
@@ -39,7 +43,7 @@
 # WORK EXPERIENCE
 {{#jobs}}
 ### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
-{{title}}
+#### {{title}}
 {{#accomplishments}}
  * {{summary}}
  {{#details}}
@@ -51,6 +55,8 @@
 
 # EDUCATION
 {{#education}}
-{{degree}} from {{#college}}{{name}} ({{date}}){{/college}}
-Courses: {{#courses}}{{.}} {{/courses}}
+### {{degree}}
+{{#college}}{{name}} ({{date}}){{/college}}
+##### Courses
+{{#courses}}{{.}} {{/courses}}
 {{/education}}
