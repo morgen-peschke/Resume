@@ -37,11 +37,15 @@ C/C++, Perl, Python, MySQL
 
 #### Table Name to Class Gem :: [rubygems.org](http://rubygems.org/gems/table-name-to-class) [github](https://github.com/morgen-peschke/table-name-to-class)  ####
 
+**Ruby - ActiveRecord**
+
  * Resolves ActiveRecord database table names to the associated ActiveRecord class.
  * Correctly handles namespaced tables, and overridden table names.
 
 
 #### Parsed Attributes Gem :: [rubygems.org](https://rubygems.org/gems/parsed-attributes) [github](https://github.com/morgen-peschke/parsed-attributes)  ####
+
+**Ruby**
 
  * Provides simplified handling of parsed data through linked attributes.
 
@@ -52,6 +56,8 @@ C/C++, Perl, Python, MySQL
 #### CallTrackingMetrics :: Feb 2014 - Jul 2014 ####
 
 ##### Software Engineer #####
+
+**Ruby JavaScript Node.js **
 
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with numbers that have a non-standard representation
@@ -65,6 +71,8 @@ C/C++, Perl, Python, MySQL
 
 ##### Software Engineer #####
 
+**C C++ Python **
+
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of question-based recruiting website
 
@@ -73,25 +81,10 @@ C/C++, Perl, Python, MySQL
 
 ##### Teaching Assistant #####
 
+**C++ Perl JavaScript Java **
+
  * Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor
  * Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course
-
-
-#### Platinum Roofing :: Dec 2009 - May 2010 ####
-
-##### Sales Development #####
-
- * Used Python and COM to connect an Excel call sheet to Google Maps and sorted them by driving distance to improve marketing efficiency
- * Uncovered evidence that the company had been sold a call sheet that was more than 3 years out-of-date
- * Applied scripting technologies to work-flow and improved call speed by 30%
- * Total savings to company: over $6,280
-
-
-#### Apple Computer :: Jan 2008 - Jun 2009 ####
-
-##### Specialist #####
-
- * Leveraged AppleScript to enable the repair technicians to provide limited data recovery services on damaged drives
 
 
 # EDUCATION #

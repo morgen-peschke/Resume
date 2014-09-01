@@ -37,6 +37,7 @@ From: Feb 2014
 To: Jul 2014
 Company: CallTrackingMetrics
 Title: Software Engineer
+Languages: Ruby, JavaScript, Node.js, 
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with numbers that have a non-standard representation
    - Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript.
@@ -48,6 +49,7 @@ From: Jun 2013
 To: Feb 2014
 Company: ManTech International
 Title: Software Engineer
+Languages: C, C++, Python, 
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of question-based recruiting website
 
@@ -55,23 +57,9 @@ From: Jan 2012
 To: Jun 2013
 Company: BYU-I, Computer Science Department
 Title: Teaching Assistant
+Languages: C++, Perl, JavaScript, Java, 
  * Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor
  * Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course
-
-From: Dec 2009
-To: May 2010
-Company: Platinum Roofing
-Title: Sales Development
- * Used Python and COM to connect an Excel call sheet to Google Maps and sorted them by driving distance to improve marketing efficiency
- * Uncovered evidence that the company had been sold a call sheet that was more than 3 years out-of-date
- * Applied scripting technologies to work-flow and improved call speed by 30%
- * Total savings to company: over $6,280
-
-From: Jan 2008
-To: Jun 2009
-Company: Apple Computer
-Title: Specialist
- * Leveraged AppleScript to enable the repair technicians to provide limited data recovery services on damaged drives
 
 
 EDUCATION

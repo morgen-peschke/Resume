@@ -57,6 +57,7 @@
 	      "title":   "Software Engineer",
 	      "location": { "city": "Severn",   "state": "MD"},
 	      "dates":    { "from": "Feb 2014", "to": "Jul 2014"},
+              "languages": [ "Ruby", "JavaScript", "Node.js"],
 	      "accomplishments": [
 		{"summary": "Designed, implemented, and maintained the Custom Display Formatting feature.",
 		 "details": [ "Solved a long-standing issue with numbers that have a non-standard representation",
@@ -73,6 +74,7 @@
 	      "title":   "Software Engineer",
 	      "location": { "city": "Hanover",  "state": "MD"},
 	      "dates":    { "from": "Jun 2013", "to": "Feb 2014"},
+              "languages": [ "C", "C++", "Python" ],
 	      "accomplishments": [
 		{"summary": "Completed the MCIS Advanced Cyber Training Program (ACTP)" },
 		{"summary": "Lead initial design and development of question-based recruiting website"}
@@ -82,28 +84,10 @@
 	      "title":   "Teaching Assistant",
 	      "location": { "city": "Rexburg",  "state": "ID"},
 	      "dates":    { "from": "Jan 2012", "to": "Jun 2013"},
+              "languages": [ "C++", "Perl", "Bash", "JavaScript", "Java" ],
 	      "accomplishments": [
 		{"summary": "Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor"},
 		{"summary": "Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course"}
-	      ]
-	    },
-	    { "company": "Platinum Roofing",
-	      "title":   "Sales Development",
-	      "location": { "city": "San Jose", "state": "CA"},
-	      "dates":    { "from": "Dec 2009", "to": "May 2010"},
-	      "accomplishments": [
-		{"summary": "Used Python and COM to connect an Excel call sheet to Google Maps and sorted them by driving distance to improve marketing efficiency"},
-		{"summary": "Uncovered evidence that the company had been sold a call sheet that was more than 3 years out-of-date"},
-		{"summary": "Applied scripting technologies to work-flow and improved call speed by 30%"},
-		{"summary": "Total savings to company: over $6,280"}
-	      ]
-	    },
-            { "company": "Apple Computer",
-	      "title":   "Specialist",
-	      "location": { "city": "Santa Rosa", "state": "CA"},
-	      "dates":    { "from": "Jan 2008",   "to": "Jun 2009"},
-	      "accomplishments": [
-		{"summary": "Leveraged AppleScript to enable the repair technicians to provide limited data recovery services on damaged drives"}
 	      ]
 	    }
 	  ],
