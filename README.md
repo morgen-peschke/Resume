@@ -37,7 +37,7 @@ C/C++, Perl, Python, MySQL
 
 #### Table Name to Class Gem :: [rubygems.org](http://rubygems.org/gems/table-name-to-class) [github](https://github.com/morgen-peschke/table-name-to-class)  ####
 
-**Ruby - ActiveRecord**
+##### Ruby - ActiveRecord #####
 
  * Resolves ActiveRecord database table names to the associated ActiveRecord class.
  * Correctly handles namespaced tables, and overridden table names.
@@ -45,7 +45,7 @@ C/C++, Perl, Python, MySQL
 
 #### Parsed Attributes Gem :: [rubygems.org](https://rubygems.org/gems/parsed-attributes) [github](https://github.com/morgen-peschke/parsed-attributes)  ####
 
-**Ruby**
+##### Ruby #####
 
  * Provides simplified handling of parsed data through linked attributes.
 
