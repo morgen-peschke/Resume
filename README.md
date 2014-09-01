@@ -57,7 +57,7 @@ C/C++, Perl, Python, MySQL
 
 ##### Software Engineer #####
 
-**Ruby JavaScript Node.js **
+**Ruby** **JavaScript** **Node.js** 
 
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with numbers that have a non-standard representation
@@ -71,7 +71,7 @@ C/C++, Perl, Python, MySQL
 
 ##### Software Engineer #####
 
-**C C++ Python **
+**C** **C++** **Python** 
 
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of question-based recruiting website
@@ -81,7 +81,7 @@ C/C++, Perl, Python, MySQL
 
 ##### Teaching Assistant #####
 
-**C++ Perl JavaScript Java **
+**C++** **Perl** **Bash** **JavaScript** **Java** 
 
  * Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor
  * Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course
