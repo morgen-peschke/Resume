@@ -26,9 +26,9 @@ Basic Linux administration, Parallel programming
 
 #### Programming Languages ####
 
-Ruby, HTML, JavaScript, CSS, Bash
+Ruby, HTML, JavaScript, CSS, C/C++
 
-C/C++, Perl, Python, MySQL
+Perl, Python, Java, MySQL, Bash
 
 
 
@@ -57,7 +57,7 @@ C/C++, Perl, Python, MySQL
 
 ##### Software Engineer #####
 
-###### Ruby JavaScript Node.js  ######
+###### Ruby, JavaScript, HTML/CSS ######
 
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with numbers that have a non-standard representation
@@ -71,7 +71,7 @@ C/C++, Perl, Python, MySQL
 
 ##### Software Engineer #####
 
-###### C C++ Python  ######
+###### C, Python, C++ ######
 
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of question-based recruiting website
@@ -81,10 +81,11 @@ C/C++, Perl, Python, MySQL
 
 ##### Teaching Assistant #####
 
-###### C++ Perl Bash JavaScript Java  ######
+###### C++, Perl, Bash, JavaScript, Java ######
 
- * Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor
- * Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course
+ * Designed and built test harnesses for student projects
+   - Enabled students to test their work, increasing understanding and confidence
+   - Greatly reduced grading turn-around time and complexity
 
 
 # EDUCATION #

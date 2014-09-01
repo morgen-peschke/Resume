@@ -14,9 +14,23 @@
 %   ...
 % \item accomplishment n
 % \end{job}
-\newenvironment{job}[4]
+\newenvironment{project}[4]
+{{\textbf{#1}} \hfill #4\\
+  \textsc{#2}  \hfill #3\vspace{0.5em}
+  \begin{itemize} \itemsep -1pt}
+  {\end{itemize}}
+
+\newenvironment{degree}[4]
 {{\textbf{#1}} \hfill #4\\
   \textsc{#2} \hfill #3\vspace{0.5em}
+  \begin{itemize} \itemsep -1pt}
+  {\end{itemize}}
+
+\newenvironment{job}[5]
+{{\textbf{#1}} \hfill #4\\
+  \textsc{#2}  \hfill #3\\
+  {\small#5}
+  \vspace{0.5em}
   \begin{itemize} \itemsep -1pt}
   {\end{itemize}}
 
@@ -54,14 +68,14 @@
 
   \section{PROJECTS}
   <<#projects>>
-  \begin{job}
+  \begin{project}
     {<<title>>}
     {<<language>>}
     <<#websites>>
     {\href{<<url>>}{<<short>>}}
     <</websites>>
     <<#bulletpoints>>\item <<.>><</bulletpoints>>
-  \end{job}
+  \end{project}
   <</projects>>
 
   \section{WORK \\ EXPERIENCE}
@@ -71,13 +85,13 @@
     {<<company>> }
     {<<#location>><<city>>, <<state>><</location>>}
     {<<#dates>><<from>> - <<to>><</dates>>}
-
+    {<<#languages>><<.>> <</languages>>}
     <<#accomplishments>>
   \item
     <<summary>>
     <<#details>>
     \begin{itemize}
-    \item[$\star$] <<.>>
+    \item <<.>>
     \end{itemize}
     <</details>>
     <</accomplishments>>
@@ -86,7 +100,7 @@
 
   \section{EDUCATION}
   <<#education>>
-  \begin{job}
+  \begin{degree}
     {<<degree>>}
     <<#college>>
     {<<name>>}
@@ -100,7 +114,7 @@
     <<#projects>>
     \href{<<url>>}{<<label>>}\\
     <</projects>>
-  \end{job}
+  \end{degree}
   <</education>>
 
 \end{resume}

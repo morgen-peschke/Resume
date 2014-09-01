@@ -14,7 +14,7 @@ Web Programming, Database Design, OOP, POSIX and Windows programming APIs, Basic
 
 PROGRAMMING LANGUAGES
 ---------------------
-Ruby, HTML, JavaScript, CSS, Bash, C/C++, Perl, Python, MySQL, 
+Ruby, HTML, JavaScript, CSS, C/C++, Perl, Python, Java, MySQL, Bash, 
 
 
 OPEN SOURCE PROJECTS
@@ -37,7 +37,7 @@ From: Feb 2014
 To: Jul 2014
 Company: CallTrackingMetrics
 Title: Software Engineer
-Languages: Ruby, JavaScript, Node.js, 
+Languages: Ruby, JavaScript, HTML/CSS
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with numbers that have a non-standard representation
    - Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript.
@@ -49,7 +49,7 @@ From: Jun 2013
 To: Feb 2014
 Company: ManTech International
 Title: Software Engineer
-Languages: C, C++, Python, 
+Languages: C, Python, C++
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of question-based recruiting website
 
@@ -57,9 +57,10 @@ From: Jan 2012
 To: Jun 2013
 Company: BYU-I, Computer Science Department
 Title: Teaching Assistant
-Languages: C++, Perl, Bash, JavaScript, Java, 
- * Programmed test harnesses for student projects, which helped the students to test their work and greatly reduced grading time for the professor
- * Examined the new version of the Networking textbook, and provided suggestions for integrating it with the course
+Languages: C++, Perl, Bash, JavaScript, Java
+ * Designed and built test harnesses for student projects
+   - Enabled students to test their work, increasing understanding and confidence
+   - Greatly reduced grading turn-around time and complexity
 
 
 EDUCATION
