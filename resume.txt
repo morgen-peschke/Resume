@@ -51,7 +51,7 @@ Company: ManTech International
 Title: Software Engineer
 Languages: C, Python, C++
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
- * Lead initial design and development of question-based recruiting website
+ * Lead initial design and development of quiz-style recruiting website
 
 From: Jan 2012
 To: Jun 2013

@@ -74,7 +74,7 @@ Perl, Python, Java, MySQL, Bash
 ###### C, Python, C++ ######
 
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
- * Lead initial design and development of question-based recruiting website
+ * Lead initial design and development of quiz-style recruiting website
 
 
 #### BYU-I, Computer Science Department :: Jan 2012 - Jun 2013 ####
