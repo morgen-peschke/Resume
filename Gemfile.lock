@@ -10,3 +10,6 @@ PLATFORMS
 DEPENDENCIES
   mustache
   rake
+
+BUNDLED WITH
+   1.10.2
