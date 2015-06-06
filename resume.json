@@ -108,7 +108,7 @@
            ]
 	  }
 	 ],
- "education": {
+ "education": [{
    "degree": "Bachelor of Science: Computer Science",
    "college": {"name":  "Brigham Young University - Idaho (BYU-I)",
 	       "city":  "Rexburg",
@@ -127,5 +127,5 @@
 		 "url":   "https://github.com/morgen-peschke/conway-boolean-network"
 		}
 	       ]
- }
+ }]
 }
