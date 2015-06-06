@@ -9,6 +9,7 @@ README_TEMPLATE = 'templates/README.md.mustache'
 
 FORMATTER = ResumeFormatter
             .fromSource(JSON.parse(IO.read(DATA_SOURCE)))
+            .reject('jobs') {|job| job['title'] == "Teaching Assistant"}
 
 task default: %w(resume.pdf resume.txt README.md)
 
