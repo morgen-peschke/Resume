@@ -53,7 +53,20 @@
 	       "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 	      }
 	     ],
- "jobs": [{"company": "CallTrackingMetrics",
+ "jobs": [{"company": "SerialTek",
+           "title": "Software Engineer",
+           "location": {"city": "San Jose", "state": "CA"},
+           "dates":    {"from": "Sept 2014", "to": "Present"},
+           "languages": "Java, C++",
+           "accomplishments": [
+               {"summary": "Designed and implemented a custom automated integration test framework",
+                "details": ["Separated test and production code",
+                            "Embedding the Groovy Script Engine provided greater flexibility and a shorter feedback cycle during test development"
+                           ]
+               }
+           ]
+          },
+          {"company": "CallTrackingMetrics",
 	   "title":   "Software Engineer",
 	   "location": {"city": "Severn",   "state": "MD"},
 	   "dates":    {"from": "Feb 2014", "to": "Jul 2014"},
