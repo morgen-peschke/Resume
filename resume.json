@@ -1,7 +1,7 @@
 {"name":"Morgen Peschke",
  "contact": {"email": "morgen.peschke@gmail.com",
 	     "phone": "(408) 724-0713",
-	     "address": {"street": "13420 Sycamore Dr",
+	     "address": {"street": "18224D Hale Ave",
 			 "city":   "Morgan Hill",
 			 "state":  "CA",
 			 "zip":    "95037"
@@ -19,10 +19,10 @@
 		     {"row": "POSIX and Windows programming APIs"},
 		     {"row": "Basic Linux administration, Parallel programming"}
 		    ],
-	    "languages": [{"row": "Ruby, HTML, JavaScript, CSS, C/C++"},
-			  {"row": "Perl, Python, Java, MySQL, Bash"}
+	    "languages": [{"row": "Java, Ruby, HTML, JavaScript, CSS"},
+			  {"row": " C/C++, Perl, Python, MySQL, Bash"}
 			 ],
-	    "frameworks": [{"row": "Ruby on Rails"}]
+	    "frameworks": [{"row": "Ruby on Rails, Java Swing"}]
 	   },
  "projects": [{"title":    "Table Name to Class Gem",
 	       "language": "Ruby - ActiveRecord",
