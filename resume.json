@@ -73,8 +73,8 @@
            "languages": "Ruby, JavaScript, HTML/CSS",
 	   "accomplishments": [
 	     {"summary": "Designed, implemented, and maintained the Custom Display Formatting feature.",
-	      "details": ["Solved a long-standing issue with numbers that have a non-standard representation",
-			  "Highly complex feature required code in 3 inter-related systems, written in Ruby, Lua, and JavaScript."
+	      "details": ["Solved a long-standing issue with phone numbers that have a non-standard representation",
+			  "Highly complex feature required code in three inter-related systems, written in Ruby, Lua, and JavaScript."
 			 ]
 	     },
 	     {"summary": "Designed and implemented integration with Box cloud storage via OAuth2",
