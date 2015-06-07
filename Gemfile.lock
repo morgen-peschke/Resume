@@ -9,7 +9,7 @@ PLATFORMS
 
 DEPENDENCIES
   mustache (~> 1.0.1)
-  rake
+  rake (~> 10.4.2)
 
 BUNDLED WITH
    1.10.2
