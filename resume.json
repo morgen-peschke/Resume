@@ -6,11 +6,11 @@
 			 "state":  "CA",
 			 "zip":    "95037"
 			},
-	     "websites": [{"label": "linkedin",
+	     "websites": [{"label": "LinkedIn",
                            "short": "www.linkedin.com/in/morgenpeschke",
 			   "url":   "http://www.linkedin.com/in/morgenpeschke"
 			  },
-			  {"label": "github",
+			  {"label": "GitHub",
                            "short": "github.com/morgen-peschke",
 			   "url":   "https://github.com/morgen-peschke"}
 			 ]
@@ -30,7 +30,7 @@
                              "short": "rubygems.org/gems/table-name-to-class",
 			     "url":   "http://rubygems.org/gems/table-name-to-class"
                             },
-			    {"label": "github",
+			    {"label": "GitHub",
                              "short": "github.com/morgen-peschke/table-name-to-class",
 			     "url":   "https://github.com/morgen-peschke/table-name-to-class"
                             }
@@ -45,7 +45,7 @@
                              "short": "rubygems.org/gems/parsed-attributes",
 			     "url":   "https://rubygems.org/gems/parsed-attributes"
                             },
-			    {"label": "github",
+			    {"label": "GitHub",
                              "short": "github.com/morgen-peschke/parsed-attributes",
 			     "url":   "https://github.com/morgen-peschke/parsed-attributes"
                             }
