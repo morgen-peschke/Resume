@@ -11,14 +11,15 @@
 {{#websites}}
 -  {{url}}
 {{/websites}}
+
 {{/contact}}
 {{#skills}}
 
 # Skills & Languages
 {{#meta.length}}
+
 #### Skills
 {{/meta.length}}
-
 {{#meta}}
 {{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
 {{/meta}}
@@ -34,11 +35,13 @@
 {{/frameworks.length}}
 {{#frameworks}}
 {{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
+
 {{/frameworks}}
 {{/skills}}
 {{#projects.length}}
 
 # Open Source Projects
+
 {{/projects.length}}
 {{#projects}}
 #### {{title}} :: {{#websites}}{{#homepage}}[{{label}}]({{url}}) {{/homepage}}{{/websites}}
@@ -52,10 +55,12 @@
 {{#jobs.length}}
 
 # WORK EXPERIENCE
+
 {{/jobs.length}}
 {{#jobs}}
 #### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
 ##### {{title}}
+
 ###### {{languages}}
 {{#accomplishments}}
  * {{summary}}
@@ -63,10 +68,12 @@
    - {{.}}
  {{/details}}
 {{/accomplishments}}
+
 {{/jobs}}
 {{#education.length}}
 
 # EDUCATION
+
 {{/education.length}}
 {{#education}}
 #### {{title}}
