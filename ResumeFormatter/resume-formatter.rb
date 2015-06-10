@@ -39,7 +39,8 @@ class ResumeFormatter
   # +section_name+:: +String+ The name of the top-level key in the data to which this
   #                           filter will be applied.
   # +filter+:: +Proc+ The filter operation, should return true to reject the contents
-  #                   or false to select the contents instead
+  #                   or false to select the contents instead. If this is omitted, then
+  #                   the section will be unconditionally rejected.
   #
   # == Example
   # === Sample JSON data
@@ -63,7 +64,7 @@ class ResumeFormatter
   #      "array": [1]
   #     }
   def reject(section_name, &filter)
-    @section_filters[section_name] << filter
+    @section_filters[section_name] << (filter || Proc.new{true})
     return self
   end
 
