@@ -20,7 +20,7 @@
 % \address used up to three times to have up to three lines of address
 \address{
   <<#contact>>
-  <<#address>><<street>>, <<city>>, <<state>> <<zip>><</address>> \\
+  <<address>> \\
   <<phone>> - <<email>> \\
   <<#websites>>
   <<url>> \\
@@ -31,29 +31,24 @@
 \begin{resume}
   <<#skills>>
   \section{SKILLS \\ LANGUAGES}
-  <<#meta.length>>
+  <<#concepts.length>>
   \textbf{Skills} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#meta>>
-    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
-    <</meta>>
+    <<#concept_lines>>{{48}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}} \\ {{/lines}}
+    <</concept_lines>>
   \end{minipage}
-  <</meta.length>>
+  <</concepts.length>>
   <<#languages.length>>
   \textbf{Languages} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#languages>>
-    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
-    <</languages>>
+    <<#language_lines>>{{20}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}} \\ {{/lines}}
+    <</language_lines>>
   \end{minipage}
   <</languages.length>>
   <<#frameworks.length>>
   \textbf{Frameworks} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#frameworks>>
-    <<#line>><<entry>><<^last>>, <</last>><</line>>
-
-    <</frameworks>>
+    <<#frameworks>><<.>><<delim>><</frameworks>>
   \end{minipage}
   <</frameworks.length>>
 
@@ -61,9 +56,7 @@
   \section{PROJECTS}
   <</projects.length>>
   <<#projects>>
-  \textbf{<<title>>} \hfill
-  <<#websites>><<#homepage>><<short>><</homepage>><</websites>>
-
+  \textbf{<<title>>} \hfill <<#homepage>><<short>><</homepage>> \\
   \textsc{<<language>>}
 
   \begin{itemize} \itemsep -1pt
@@ -77,22 +70,24 @@
   <</jobs.length>>
   <<#jobs>>
   \begin{minipage}{\textwidth}
-    \textbf{<<title>>} \hfill <<#dates>><<from>> - <<to>><</dates>>
+    \textbf{<<title>>} \hfill <<#dates>><<start>> - <<end>><</dates>>
 
     \textsc{<<company>>} \hfill
-    <<#location>><<city>>, <<state>><</location>>
+    <<location>>
 
-    \small{<<#languages>><<.>> <</languages>>}
+    \small{<<#languages>><<.>><<delim>><</languages>>}
     \vspace{0.5em}
     \begin{itemize} \itemsep -1pt
       <<#accomplishments>>
     \item
       <<summary>>
-      <<#details>>
+      <<#details.length>>
       \begin{itemize}
+        <<#details>>
       \item <<.>>
+        <</details>>
       \end{itemize}
-      <</details>>
+      <</details.length>>
       <</accomplishments>>
     \end{itemize}
   \end{minipage}
@@ -105,25 +100,27 @@
   <<#education>>
   \begin{minipage}{\textwidth}
     \textbf{<<title>>} \hfill <<date>>\\
-    <<#source>>
-    \textsc{<<name>>} \hfill <<city>>, <<state>>\\
-    <</source>>
+    \textsc{<<source>>} \hfill <<location>>\\
 
     <<#courses.length>>
     {\bf Relevant Coursework}\\
+    {\raggedright
+      <<#courses>>
+      <<.>><<delim>>
+      <</courses>>
+    }
+    \\
+
     <</courses.length>>
-    <<#courses>>
-    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
-    <</courses>>
     <<#projects.length>>
 
     {\bf Projects}
-    <</projects.length>>
     \begin{itemize}
       <<#projects>>
     \item <<label>> \\ <<url>>
       <</projects>>
     \end{itemize}
+    <</projects.length>>
   \end{minipage}
   <</education>>
 \end{resume}

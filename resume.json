@@ -15,87 +15,63 @@
 			   "url":   "https://github.com/morgen-peschke"}
 			 ]
 	    },
- "skills": {"meta": [{"line": [{"entry": "Web Programming"},
-                               {"entry": "Database Design"},
-                               {"entry": "OOP"}
-                              ]},
-		     {"line": [{"entry": "POSIX and Windows programming APIs"}]},
-		     {"line": [{"entry": "Basic Linux administration"},
-                               {"entry": "Parallel programming"}
-                              ]}
-		    ],
-	    "languages": [{"line": [{"entry": "Java"},
-                                    {"entry": "Ruby"},
-                                    {"entry": "HTML"},
-                                    {"entry": "JavaScript"},
-                                    {"entry": "CSS"}
-                                   ]},
-			   {"line": [{"entry": "C/C++"},
-                                     {"entry": "Perl"},
-                                     {"entry": "Python"},
-                                     {"entry": "MySQL"},
-                                     {"entry": "Bash"}
-                                    ]}
-			 ],
-	    "frameworks": [{"line": [{"entry": "Ruby on Rails"},
-                                     {"entry": "Java Swing"}
-                                    ]}
-                          ]
+ "skills": {"concepts": ["Web Programming", "Database Design", "OOP",
+                         "POSIX and Windows programming APIs",
+                         "Basic Linux administration", "Parallel programming"
+                        ],
+            "languages": ["Java",  "Ruby", "HTML",   "JavaScript", "CSS",
+                          "C/C++", "Perl", "Python", "MySQL",      "Bash"
+                         ],
+            "frameworks": ["Ruby on Rails", "Java Swing"]
 	   },
  "projects": [{"title":    "Table Name to Class Gem",
 	       "language": "Ruby - ActiveRecord",
-               "websites": {"homepage": {"label": "rubygems.org",
-                                         "short": "rubygems.org/gems/table-name-to-class",
-			                 "url":   "http://rubygems.org/gems/table-name-to-class"
-                                        },
-                            "other": [{"label": "GitHub",
-                                       "short": "github.com/morgen-peschke/table-name-to-class",
-			               "url":   "https://github.com/morgen-peschke/table-name-to-class"
-                                      }]
+               "homepage": {"label": "rubygems.org",
+                            "url":   "http://rubygems.org/gems/table-name-to-class"
                            },
-	       "bulletpoints": ["Resolves ActiveRecord database table names to the associated ActiveRecord class.",
+               "mirrors": [{"label": "GitHub",
+                            "url":   "https://github.com/morgen-peschke/table-name-to-class"
+                           }],
+               "bulletpoints": ["Resolves ActiveRecord database table names to the associated ActiveRecord class.",
 				"Correctly handles namespaced tables, and overridden table names."
 			       ]
 	      },
 	      {"title":    "Parsed Attributes Gem",
 	       "language": "Ruby",
-	       "websites": {"homepage": {"label": "rubygems.org",
-                                         "short": "rubygems.org/gems/parsed-attributes",
-			                 "url":   "https://rubygems.org/gems/parsed-attributes"
-                                        },
-                            "other": [{"label": "GitHub",
-                                       "short": "github.com/morgen-peschke/parsed-attributes",
-			               "url":   "https://github.com/morgen-peschke/parsed-attributes"
-                                      }]
+               "homepage": {"label": "rubygems.org",
+                            "url":   "https://rubygems.org/gems/parsed-attributes"
                            },
-	       "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
+               "mirrors": [{"label": "GitHub",
+                            "url":   "https://github.com/morgen-peschke/parsed-attributes"
+                           }],
+               "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 	      }
 	     ],
  "jobs": [{"company": "SerialTek",
            "title": "Software Engineer",
            "location": {"city": "San Jose", "state": "CA"},
-           "dates":    {"from": "Sept 2014", "to": "Present"},
-           "languages": "Java, C++",
+           "dates":    {"start": "Sept 2014"},
+           "languages": ["Java", "C++"],
            "accomplishments": [
-               {"summary": "Engineered and implemented a major refactoring of our custom automated integration test framework",
-                "details": ["Separated test and production code",
-                            "Delivered greater flexibility and a shorter feedback cycle during test development",
-                            "Enhanced granularity of feedback provided by tests"
-                           ]
-               },
-               {"summary": "Championed modernization of Java Coding Conventions",
-                "details": ["Generated the rough draft of replacement conventions document",
-                            "Drove the feedback-integration cycle",
-                            "Authored the final, accepted, copy "
-                           ]},
-               {"summary": "Refined and implemented NVMe filtering extension of existing PCIe filtering GUI"}
+             {"summary": "Engineered and implemented a major refactoring of our custom automated integration test framework",
+              "details": ["Separated test and production code",
+                          "Delivered greater flexibility and a shorter feedback cycle during test development",
+                          "Enhanced granularity of feedback provided by tests"
+                         ]
+             },
+             {"summary": "Championed modernization of Java Coding Conventions",
+              "details": ["Generated the rough draft of replacement conventions document",
+                          "Drove the feedback-integration cycle",
+                          "Authored the final, accepted, copy "
+                         ]},
+             {"summary": "Refined and implemented NVMe filtering extension of existing PCIe filtering GUI"}
            ]
           },
           {"company": "CallTrackingMetrics",
 	   "title":   "Software Engineer",
 	   "location": {"city": "Severn",   "state": "MD"},
-	   "dates":    {"from": "Feb 2014", "to": "Jul 2014"},
-           "languages": "Ruby, JavaScript, HTML/CSS",
+           "dates":    {"start": "Feb 2014", "end": "Jul 2014"},
+           "languages": ["Ruby", "JavaScript", "HTML/CSS"],
 	   "accomplishments": [
 	     {"summary": "Designed, implemented, and maintained the Custom Display Formatting feature.",
 	      "details": ["Solved a long-standing issue with phone numbers that have a non-standard representation",
@@ -111,8 +87,8 @@
 	  {"company": "ManTech International",
 	   "title":   "Software Engineer",
 	   "location": {"city": "Hanover",  "state": "MD"},
-	   "dates":    {"from": "Jun 2013", "to": "Feb 2014"},
-           "languages": "C, Python, C++",
+           "dates":    {"start": "Jun 2013", "end": "Feb 2014"},
+           "languages": ["C", "Python", "C++"],
 	   "accomplishments":[
 	     {"summary": "Completed the MCIS Advanced Cyber Training Program (ACTP)" },
 	     {"summary": "Lead initial design and development of quiz-style recruiting website"}
@@ -121,8 +97,8 @@
 	  {"company": "BYU-I, Computer Science Department",
 	   "title":   "Teaching Assistant",
 	   "location": {"city": "Rexburg",  "state": "ID"},
-	   "dates":    {"from": "Jan 2012", "to": "Jun 2013"},
-           "languages": "C++, Perl, Bash, JavaScript, Java",
+           "dates":    {"start": "Jan 2012", "end": "Jun 2013"},
+           "languages": ["C++", "Perl", "Bash", "JavaScript", "Java"],
 	   "accomplishments":[
 	     {"summary": "Designed and built test harnesses for student projects",
               "details":[
@@ -134,28 +110,22 @@
 	  }
 	 ],
  "education": [{
-     "title": "Bachelor of Science: Computer Science",
-     "date":  "July 2013",
-     "source": {"name":  "Brigham Young University - Idaho (BYU-I)",
-	        "city":  "Rexburg",
-	        "state": "ID"
-	       },
-     "courses": [{"line": [{"entry": "Algorithms and Complexity"},
-                           {"entry": "Web Engineering"},
-                           {"entry": "Networking"}
-                          ]},
-	         {"line": [{"entry": "Operating Systems"},
-                           {"entry": "Software Engineering"},
-                           {"entry": "Database Design"}
-	                  ]}],
-     "projects": [{"label": "Genetic Optimization of the Ant Colony family of algorithms",
-                   "short": "github.com/morgen-peschke/ant-colony-optimizer",
-		   "url":   "https://github.com/morgen-peschke/ant-colony-optimizer"
-		  },
-		  {"label": "2D Boolean Network implementation of Conway's Game of Life",
-                   "short": "github.com/morgen-peschke/conway-boolean-network",
-		   "url":   "https://github.com/morgen-peschke/conway-boolean-network"
-		  }
-	         ]
+   "title": "Bachelor of Science: Computer Science",
+   "date":  "July 2013",
+   "source": "Brigham Young University - Idaho (BYU-I)",
+   "location": {"city":  "Rexburg", "state": "ID"},
+   "courses": ["Algorithms and Complexity",
+               "Web Engineering",
+               "Networking",
+               "Operating Systems",
+               "Software Engineering",
+               "Database Design"
+              ],
+   "projects": [{"label": "Genetic Optimization of the Ant Colony family of algorithms",
+                 "url":   "https://github.com/morgen-peschke/ant-colony-optimizer"
+                },
+                {"label": "2D Boolean Network implementation of Conway's Game of Life",
+                 "url":   "https://github.com/morgen-peschke/conway-boolean-network"
+                }]
  }]
 }

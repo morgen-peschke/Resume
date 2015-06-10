@@ -1,5 +1,5 @@
 require_relative 'resume-writer'
-
+require_relative 'json-objects/resume'
 ##
 # Helper class to format and filter resume data before
 # applying a template and writing it.
@@ -22,7 +22,7 @@ class ResumeFormatter
   #
   # The data gets filtered and passed to a writer for processing/saving
   def formatWith(template_file)
-    return ResumeWriter.new template_file, filteredData()
+    return ResumeWriter.new template_file, Resume.new(filteredData())
   end
 
   ##

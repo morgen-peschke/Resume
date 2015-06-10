@@ -1,42 +1,42 @@
 {{! -*- markdown -*- }}
 # {{name}}
 {{#contact}}  
-{{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}  
+{{#address}}{{#first_line}}{{.}}  
+{{/first_line}}{{#second_line}}{{.}}  
+{{/second_line}}{{/address}}
 {{phone}}  
 {{email}}  
 {{#websites.length}}
 
 #### Websites
 {{/websites.length}}
-{{#websites}}
--  {{url}}
+{{#websites}}{{url}}  
 {{/websites}}
 
 {{/contact}}
 {{#skills}}
 
 # Skills & Languages
-{{#meta.length}}
+{{#concepts.length}}
 
 #### Skills
-{{/meta.length}}
-{{#meta}}
-{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
-{{/meta}}
+{{/concepts.length}}
+{{#concept_lines}}{{48}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
+{{/lines}}
+{{/concept_lines}}
 {{#languages.length}}
 
 #### Programming Languages
 {{/languages.length}}
-{{#languages}}{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
-{{/languages}}
+{{#language_lines}}{{20}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
+{{/lines}}
+{{/language_lines}}
 {{#frameworks.length}}
 
 #### Frameworks
 {{/frameworks.length}}
-{{#frameworks}}
-{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
+{{#frameworks}}{{.}}{{delim}}{{/frameworks}}
 
-{{/frameworks}}
 {{/skills}}
 {{#projects.length}}
 
@@ -44,9 +44,8 @@
 
 {{/projects.length}}
 {{#projects}}
-#### {{title}} :: {{#websites}}{{#homepage}}[{{label}}]({{url}}) {{/homepage}}{{/websites}}
+#### {{title}} :: {{#homepage}}[{{label}}]({{url}}) {{/homepage}} :: {{language}}
 
-##### {{language}}
 {{#bulletpoints}}
  * {{.}}
 {{/bulletpoints}}
@@ -58,10 +57,11 @@
 
 {{/jobs.length}}
 {{#jobs}}
-#### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
-##### {{title}}
+#### {{company}} :: {{title}} :: {{#languages}}{{.}}{{delim}}{{/languages}}
+{{#dates}}{{start}} - {{end}}{{/dates}}  
+{{location}}
 
-###### {{languages}}
+##### Accomplishments 
 {{#accomplishments}}
  * {{summary}}
  {{#details}}
@@ -77,11 +77,22 @@
 {{/education.length}}
 {{#education}}
 #### {{title}}
-{{#source}}{{name}}  
-{{city}}, {{state}} - {{date}}
-{{/source}}
+{{source}}  
+{{location}} - {{date}}
 
+{{#courses.length}}
 ##### Courses
-{{#courses}}{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
-{{/courses}}
+{{/courses.length}}
+{{#course_lines}}{{40}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
+{{/lines}}
+{{/course_lines}}
+
+{{#projects.length}}
+##### Projects
+{{/projects.length}}
+{{#projects}}
+  - {{label}}
+    - {{url}}
+
+{{/projects}}
 {{/education}}

@@ -1,12 +1,14 @@
 # Morgen Peschke
   
-18224D Hale Ave, Morgan Hill, CA 95037  
+18224D Hale Ave  
+Morgan Hill, CA 95037  
+
 (408) 724-0713  
 morgen.peschke@gmail.com  
 
 #### Websites
--  http://www.linkedin.com/in/morgenpeschke
--  https://github.com/morgen-peschke
+http://www.linkedin.com/in/morgenpeschke  
+https://github.com/morgen-peschke  
 
 
 # Skills & Languages
@@ -17,33 +19,33 @@ POSIX and Windows programming APIs
 Basic Linux administration, Parallel programming  
 
 #### Programming Languages
-Java, Ruby, HTML, JavaScript, CSS  
-C/C++, Perl, Python, MySQL, Bash  
+Java, Ruby, HTML  
+JavaScript, CSS, C/C++  
+Perl, Python, MySQL, Bash  
 
 #### Frameworks
-Ruby on Rails, Java Swing  
+Ruby on Rails, Java Swing
 
 
 # Open Source Projects
 
-#### Table Name to Class Gem :: [rubygems.org](http://rubygems.org/gems/table-name-to-class) 
+#### Table Name to Class Gem :: [rubygems.org](http://rubygems.org/gems/table-name-to-class)  :: Ruby - ActiveRecord
 
-##### Ruby - ActiveRecord
  * Resolves ActiveRecord database table names to the associated ActiveRecord class.
  * Correctly handles namespaced tables, and overridden table names.
 
-#### Parsed Attributes Gem :: [rubygems.org](https://rubygems.org/gems/parsed-attributes) 
+#### Parsed Attributes Gem :: [rubygems.org](https://rubygems.org/gems/parsed-attributes)  :: Ruby
 
-##### Ruby
  * Provides simplified handling of parsed data through linked attributes.
 
 
 # WORK EXPERIENCE
 
-#### SerialTek :: Sept 2014 - Present
-##### Software Engineer
+#### SerialTek :: Software Engineer :: Java, C++
+Sept 2014 - Present  
+San Jose, CA
 
-###### Java, C++
+##### Accomplishments 
  * Engineered and implemented a major refactoring of our custom automated integration test framework
    - Separated test and production code
    - Delivered greater flexibility and a shorter feedback cycle during test development
@@ -54,10 +56,11 @@ Ruby on Rails, Java Swing
    - Authored the final, accepted, copy 
  * Refined and implemented NVMe filtering extension of existing PCIe filtering GUI
 
-#### CallTrackingMetrics :: Feb 2014 - Jul 2014
-##### Software Engineer
+#### CallTrackingMetrics :: Software Engineer :: Ruby, JavaScript, HTML/CSS
+Feb 2014 - Jul 2014  
+Severn, MD
 
-###### Ruby, JavaScript, HTML/CSS
+##### Accomplishments 
  * Designed, implemented, and maintained the Custom Display Formatting feature.
    - Solved a long-standing issue with phone numbers that have a non-standard representation
    - Highly complex feature required code in three inter-related systems, written in Ruby, Lua, and JavaScript.
@@ -65,10 +68,11 @@ Ruby on Rails, Java Swing
    - Enabled customers to bulk export call audio
  * Significantly expanded test suite coverage.
 
-#### ManTech International :: Jun 2013 - Feb 2014
-##### Software Engineer
+#### ManTech International :: Software Engineer :: C, Python, C++
+Jun 2013 - Feb 2014  
+Hanover, MD
 
-###### C, Python, C++
+##### Accomplishments 
  * Completed the MCIS Advanced Cyber Training Program (ACTP)
  * Lead initial design and development of quiz-style recruiting website
 
@@ -80,5 +84,14 @@ Brigham Young University - Idaho (BYU-I)
 Rexburg, ID - July 2013
 
 ##### Courses
-Algorithms and Complexity, Web Engineering, Networking  
-Operating Systems, Software Engineering, Database Design  
+Algorithms and Complexity, Web Engineering  
+Networking, Operating Systems  
+Software Engineering, Database Design  
+
+##### Projects
+  - Genetic Optimization of the Ant Colony family of algorithms
+    - https://github.com/morgen-peschke/ant-colony-optimizer
+
+  - 2D Boolean Network implementation of Conway&#39;s Game of Life
+    - https://github.com/morgen-peschke/conway-boolean-network
+
