@@ -77,8 +77,6 @@ class ResumeFormatter
     @section_filters = Hash.new {|h,k| h[k] = []}
   end
 
-  private
-
   ##
   # Filters the data and adds dynamically generated markup
   # ----
@@ -93,6 +91,8 @@ class ResumeFormatter
 
     return ResumeFormatter.markFirstAndLast data
   end
+
+  private
 
   ##
   # Filters the data in a section

@@ -31,6 +31,12 @@ file 'README.md' => ['resume.json', README_TEMPLATE] do
     .saveAsText('README.md')
 end
 
+task 'json' do
+  require 'pp'
+  pp FORMATTER.filteredData()
+
+end
+
 %w(resume.json latex/template.tex.mustache latex/res.cls).each do |extern|
   file "#{extern}" do |t| abort "FAILED! External dependency '#{t.name}' does not exist"; end
 end
