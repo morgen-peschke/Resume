@@ -1,45 +1,49 @@
-# {{name}} #
-{{#contact}}
+{{! -*- markdown -*- }}
+# {{name}}
+{{#contact}}  
+{{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}  
+{{phone}}  
+{{email}}  
+{{#websites.length}}
 
-{{#address}}{{street}}, {{city}}, {{state}} {{zip}}{{/address}}
-
-{{phone}}
-
-{{email}}
-
-#### Websites ####
-
+#### Websites
+{{/websites.length}}
 {{#websites}}
 -  {{url}}
 {{/websites}}
 {{/contact}}
 {{#skills}}
 
-# Skills & Languages #
-
-#### Skills ####
+# Skills & Languages
+{{#meta.length}}
+#### Skills
+{{/meta.length}}
 
 {{#meta}}
-{{row}}
-
+{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
 {{/meta}}
-#### Programming Languages ####
+{{#languages.length}}
 
-{{#languages}}
-{{row}}
-
+#### Programming Languages
+{{/languages.length}}
+{{#languages}}{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
 {{/languages}}
+{{#frameworks.length}}
+
+#### Frameworks
+{{/frameworks.length}}
+{{#frameworks}}
+{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
+{{/frameworks}}
 {{/skills}}
 {{#projects.length}}
 
-# Open Source Projects #
-
+# Open Source Projects
 {{/projects.length}}
 {{#projects}}
-#### {{title}} :: {{#websites}}[{{label}}]({{url}}) {{/websites}} ####
+#### {{title}} :: {{#websites}}{{#homepage}}[{{label}}]({{url}}) {{/homepage}}{{/websites}}
 
-##### {{language}} #####
-
+##### {{language}}
 {{#bulletpoints}}
  * {{.}}
 {{/bulletpoints}}
@@ -47,38 +51,30 @@
 {{/projects}}
 {{#jobs.length}}
 
-# WORK EXPERIENCE #
-
+# WORK EXPERIENCE
 {{/jobs.length}}
 {{#jobs}}
-#### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}} ####
-
-##### {{title}} #####
-
-###### {{languages}} ######
-
+#### {{company}} :: {{#dates}}{{from}} - {{to}}{{/dates}}
+##### {{title}}
+###### {{languages}}
 {{#accomplishments}}
  * {{summary}}
  {{#details}}
    - {{.}}
  {{/details}}
 {{/accomplishments}}
-
 {{/jobs}}
 {{#education.length}}
 
-# EDUCATION #
-
+# EDUCATION
 {{/education.length}}
 {{#education}}
-#### {{degree}} ####
+#### {{title}}
+{{#source}}{{name}}  
+{{city}}, {{state}} - {{date}}
+{{/source}}
 
-{{#college}}{{name}} ({{date}}){{/college}}
-
-##### Courses #####
-
-{{#courses}}
-{{.}}
-
+##### Courses
+{{#courses}}{{#line}}{{entry}}{{^last}}, {{/last}}{{/line}}  
 {{/courses}}
 {{/education}}

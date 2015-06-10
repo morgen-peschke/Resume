@@ -154,7 +154,7 @@ class ResumeFormatter
     if obj.is_a?(Array)
       first, last = 0, obj.size - 1
       obj = obj.each_with_index.map do |e,i|
-        if e.is_a?(Hash) and e.key?('row')
+        if e.is_a?(Hash) and e.key?('entry')
           e['first'] = true if i == first
           e['last']  = true if i == last
         else

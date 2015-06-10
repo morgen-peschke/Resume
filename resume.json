@@ -15,41 +15,59 @@
 			   "url":   "https://github.com/morgen-peschke"}
 			 ]
 	    },
- "skills": {"meta": [{"row": "Web Programming, Database Design, OOP"},
-		     {"row": "POSIX and Windows programming APIs"},
-		     {"row": "Basic Linux administration, Parallel programming"}
+ "skills": {"meta": [{"line": [{"entry": "Web Programming"},
+                               {"entry": "Database Design"},
+                               {"entry": "OOP"}
+                              ]},
+		     {"line": [{"entry": "POSIX and Windows programming APIs"}]},
+		     {"line": [{"entry": "Basic Linux administration"},
+                               {"entry": "Parallel programming"}
+                              ]}
 		    ],
-	    "languages": [{"row": "Java, Ruby, HTML, JavaScript, CSS"},
-			  {"row": " C/C++, Perl, Python, MySQL, Bash"}
+	    "languages": [{"line": [{"entry": "Java"},
+                                    {"entry": "Ruby"},
+                                    {"entry": "HTML"},
+                                    {"entry": "JavaScript"},
+                                    {"entry": "CSS"}
+                                   ]},
+			   {"line": [{"entry": "C/C++"},
+                                     {"entry": "Perl"},
+                                     {"entry": "Python"},
+                                     {"entry": "MySQL"},
+                                     {"entry": "Bash"}
+                                    ]}
 			 ],
-	    "frameworks": [{"row": "Ruby on Rails, Java Swing"}]
+	    "frameworks": [{"line": [{"entry": "Ruby on Rails"},
+                                     {"entry": "Java Swing"}
+                                    ]}
+                          ]
 	   },
  "projects": [{"title":    "Table Name to Class Gem",
 	       "language": "Ruby - ActiveRecord",
-	       "websites": [{"label": "rubygems.org",
-                             "short": "rubygems.org/gems/table-name-to-class",
-			     "url":   "http://rubygems.org/gems/table-name-to-class"
-                            },
-			    {"label": "GitHub",
-                             "short": "github.com/morgen-peschke/table-name-to-class",
-			     "url":   "https://github.com/morgen-peschke/table-name-to-class"
-                            }
-			   ],
+               "websites": {"homepage": {"label": "rubygems.org",
+                                         "short": "rubygems.org/gems/table-name-to-class",
+			                 "url":   "http://rubygems.org/gems/table-name-to-class"
+                                        },
+                            "other": [{"label": "GitHub",
+                                       "short": "github.com/morgen-peschke/table-name-to-class",
+			               "url":   "https://github.com/morgen-peschke/table-name-to-class"
+                                      }]
+                           },
 	       "bulletpoints": ["Resolves ActiveRecord database table names to the associated ActiveRecord class.",
 				"Correctly handles namespaced tables, and overridden table names."
 			       ]
 	      },
 	      {"title":    "Parsed Attributes Gem",
 	       "language": "Ruby",
-	       "websites": [{"label": "rubygems.org",
-                             "short": "rubygems.org/gems/parsed-attributes",
-			     "url":   "https://rubygems.org/gems/parsed-attributes"
-                            },
-			    {"label": "GitHub",
-                             "short": "github.com/morgen-peschke/parsed-attributes",
-			     "url":   "https://github.com/morgen-peschke/parsed-attributes"
-                            }
-		           ],
+	       "websites": {"homepage": {"label": "rubygems.org",
+                                         "short": "rubygems.org/gems/parsed-attributes",
+			                 "url":   "https://rubygems.org/gems/parsed-attributes"
+                                        },
+                            "other": [{"label": "GitHub",
+                                       "short": "github.com/morgen-peschke/parsed-attributes",
+			               "url":   "https://github.com/morgen-peschke/parsed-attributes"
+                                      }]
+                           },
 	       "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 	      }
 	     ],
@@ -59,11 +77,18 @@
            "dates":    {"from": "Sept 2014", "to": "Present"},
            "languages": "Java, C++",
            "accomplishments": [
-               {"summary": "Designed and implemented a custom automated integration test framework",
+               {"summary": "Engineered and implemented a major refactoring of our custom automated integration test framework",
                 "details": ["Separated test and production code",
-                            "Embedding the Groovy Script Engine provided greater flexibility and a shorter feedback cycle during test development"
+                            "Delivered greater flexibility and a shorter feedback cycle during test development",
+                            "Enhanced granularity of feedback provided by tests"
                            ]
-               }
+               },
+               {"summary": "Championed modernization of Java Coding Conventions",
+                "details": ["Generated the rough draft of replacement conventions document",
+                            "Drove the feedback-integration cycle",
+                            "Authored the final, accepted, copy "
+                           ]},
+               {"summary": "Refined and implemented NVMe filtering extension of existing PCIe filtering GUI"}
            ]
           },
           {"company": "CallTrackingMetrics",
@@ -109,23 +134,28 @@
 	  }
 	 ],
  "education": [{
-   "degree": "Bachelor of Science: Computer Science",
-   "college": {"name":  "Brigham Young University - Idaho (BYU-I)",
-	       "city":  "Rexburg",
-	       "state": "ID",
-	       "date":  "Jul 2013"
-	      },
-   "courses": ["Algorithms and Complexity, Web Engineering, Networking",
-	       "Operating Systems, Software Engineering, Database Design"
-	      ],
-   "projects": [{"label": "Genetic Optimization of the Ant Colony family of algorithms",
-                 "short": "github.com/morgen-peschke/ant-colony-optimizer",
-		 "url":   "https://github.com/morgen-peschke/ant-colony-optimizer"
-		},
-		{"label": "2D Boolean Network implementation of Conway's Game of Life",
-                 "short": "github.com/morgen-peschke/conway-boolean-network",
-		 "url":   "https://github.com/morgen-peschke/conway-boolean-network"
-		}
-	       ]
+     "title": "Bachelor of Science: Computer Science",
+     "date":  "July 2013",
+     "source": {"name":  "Brigham Young University - Idaho (BYU-I)",
+	        "city":  "Rexburg",
+	        "state": "ID"
+	       },
+     "courses": [{"line": [{"entry": "Algorithms and Complexity"},
+                           {"entry": "Web Engineering"},
+                           {"entry": "Networking"}
+                          ]},
+	         {"line": [{"entry": "Operating Systems"},
+                           {"entry": "Software Engineering"},
+                           {"entry": "Database Design"}
+	                  ]}],
+     "projects": [{"label": "Genetic Optimization of the Ant Colony family of algorithms",
+                   "short": "github.com/morgen-peschke/ant-colony-optimizer",
+		   "url":   "https://github.com/morgen-peschke/ant-colony-optimizer"
+		  },
+		  {"label": "2D Boolean Network implementation of Conway's Game of Life",
+                   "short": "github.com/morgen-peschke/conway-boolean-network",
+		   "url":   "https://github.com/morgen-peschke/conway-boolean-network"
+		  }
+	         ]
  }]
 }

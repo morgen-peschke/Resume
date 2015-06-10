@@ -7,30 +7,10 @@
 
 \usepackage{hyperref}
 
-% Used to standardize formatting on job entries (and save typing). Used as
-% follows:
-% \begin{job}{title}{company}{location}{time}
-% \item accomplishment 1
-%   ...
-% \item accomplishment n
-% \end{job}
+%% Defined here so that the arguments can be reordered
 \newenvironment{project}[4]
 {{\textbf{#1}} \hfill #4\\
   \textsc{#2}  \hfill #3\vspace{0.5em}
-  \begin{itemize} \itemsep -1pt}
-  {\end{itemize}}
-
-\newenvironment{degree}[4]
-{{\textbf{#1}} \hfill #4\\
-  \textsc{#2} \hfill #3\vspace{0.5em}
-  \begin{itemize} \itemsep -1pt}
-  {\end{itemize}}
-
-\newenvironment{job}[5]
-{{\textbf{#1}} \hfill #4\\
-  \textsc{#2}  \hfill #3\\
-  {\small#5}
-  \vspace{0.5em}
   \begin{itemize} \itemsep -1pt}
   {\end{itemize}}
 
@@ -41,9 +21,9 @@
 \address{
   <<#contact>>
   <<#address>><<street>>, <<city>>, <<state>> <<zip>><</address>> \\
-  <<phone>> - \href{mailto:<<email>>}{<<email>>} \\
+  <<phone>> - <<email>> \\
   <<#websites>>
-  \url{ <<url>> } \\
+  <<url>> \\
   <</websites>>
   <</contact>>
 }
@@ -51,77 +31,100 @@
 \begin{resume}
   <<#skills>>
   \section{SKILLS \\ LANGUAGES}
-  \begin{tabular}{ll}
+  <<#meta.length>>
+  \textbf{Skills} \hfill
+  \begin{minipage}[t]{0.8\textwidth}
     <<#meta>>
-    <<#first>>Skills:<</first>> & <<row>>\\
-    <</meta>> \\
-
+    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
+    <</meta>>
+  \end{minipage}
+  <</meta.length>>
+  <<#languages.length>>
+  \textbf{Languages} \hfill
+  \begin{minipage}[t]{0.8\textwidth}
     <<#languages>>
-    <<#first>>Languages:<</first>> & <<row>>\\
-    <</languages>> \\
-
+    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
+    <</languages>>
+  \end{minipage}
+  <</languages.length>>
+  <<#frameworks.length>>
+  \textbf{Frameworks} \hfill
+  \begin{minipage}[t]{0.8\textwidth}
     <<#frameworks>>
-    <<#first>>Frameworks:<</first>> & <<row>>\\
-    <</frameworks>> \\
-  \end{tabular}
-  <</skills>>
+    <<#line>><<entry>><<^last>>, <</last>><</line>>
+
+    <</frameworks>>
+  \end{minipage}
+  <</frameworks.length>>
 
   <<#projects.length>>
   \section{PROJECTS}
   <</projects.length>>
   <<#projects>>
-  \begin{project}
-    {<<title>>}
-    {<<language>>}
-    <<#websites>>
-    {\href{<<url>>}{<<short>>}}
-    <</websites>>
+  \textbf{<<title>>} \hfill
+  <<#websites>><<#homepage>><<short>><</homepage>><</websites>>
+
+  \textsc{<<language>>}
+
+  \begin{itemize} \itemsep -1pt
     <<#bulletpoints>>\item <<.>><</bulletpoints>>
-  \end{project}
+  \end{itemize}
   <</projects>>
+  <</skills>>
 
   <<#jobs.length>>
   \section{WORK \\ EXPERIENCE}
   <</jobs.length>>
   <<#jobs>>
-  \begin{job}
-    {<<title>>}
-    {<<company>> }
-    {<<#location>><<city>>, <<state>><</location>>}
-    {<<#dates>><<from>> - <<to>><</dates>>}
-    {<<#languages>><<.>> <</languages>>}
-    <<#accomplishments>>
-  \item
-    <<summary>>
-    <<#details>>
-    \begin{itemize}
-    \item <<.>>
+  \begin{minipage}{\textwidth}
+    \textbf{<<title>>} \hfill <<#dates>><<from>> - <<to>><</dates>>
+
+    \textsc{<<company>>} \hfill
+    <<#location>><<city>>, <<state>><</location>>
+
+    \small{<<#languages>><<.>> <</languages>>}
+    \vspace{0.5em}
+    \begin{itemize} \itemsep -1pt
+      <<#accomplishments>>
+    \item
+      <<summary>>
+      <<#details>>
+      \begin{itemize}
+      \item <<.>>
+      \end{itemize}
+      <</details>>
+      <</accomplishments>>
     \end{itemize}
-    <</details>>
-    <</accomplishments>>
-  \end{job}
+  \end{minipage}
+
   <</jobs>>
 
   <<#education.length>>
   \section{EDUCATION}
   <</education.length>>
   <<#education>>
-  \begin{degree}
-    {<<degree>>}
-    <<#college>>
-    {<<name>>}
-    {<<city>>, <<state>>}
-    {<<date>>}
-    <</college>>
+  \begin{minipage}{\textwidth}
+    \textbf{<<title>>} \hfill <<date>>\\
+    <<#source>>
+    \textsc{<<name>>} \hfill <<city>>, <<state>>\\
+    <</source>>
 
-  \item {\sl\bf Relevant Coursework:}\\
-    <<#courses>><<.>> \\<</courses>>
-  \item {\sl\bf Projects:}\\
-    <<#projects>>
-    \href{<<url>>}{<<label>>}\\
-    <</projects>>
-  \end{degree}
+    <<#courses.length>>
+    {\bf Relevant Coursework}\\
+    <</courses.length>>
+    <<#courses>>
+    <<#line>><<entry>><<^last>>, <</last>><</line>> \\
+    <</courses>>
+    <<#projects.length>>
+
+    {\bf Projects}
+    <</projects.length>>
+    \begin{itemize}
+      <<#projects>>
+    \item <<label>> \\ <<url>>
+      <</projects>>
+    \end{itemize}
+  \end{minipage}
   <</education>>
-
 \end{resume}
 \end{document}
