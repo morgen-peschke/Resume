@@ -24,12 +24,13 @@ class ResumeWriter
     FileUtils.cd('latex') do
       IO.write 'generated_latex_source.tex', source
 
-      system('pdflatex',
-             '-halt-on-error',
-             '-output-format',
-             'pdf',
-             'generated_latex_source.tex')
-
+      0.upto(2).each do
+        system('pdflatex',
+          '-halt-on-error',
+          '-output-format',
+          'pdf',
+          'generated_latex_source.tex')
+        end
       FileUtils.mv 'generated_latex_source.pdf', "../#{outfile}"
       FileUtils.rm Dir['generated_latex_source.*']
     end
