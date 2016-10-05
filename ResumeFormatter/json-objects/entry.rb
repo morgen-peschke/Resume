@@ -5,7 +5,7 @@ class Entry
     return array unless array.respond_to? :map!
 
     array.map! {|element| klass.new element}
-    array[-1].show_delimiter = false
+    array[-1].show_delimiter = false unless array[-1].nil?
 
     return array
   end
