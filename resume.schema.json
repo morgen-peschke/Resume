@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Resume for Morgen Peschke",
+  "description": "Data store for the information that is used to generate my resume in various output formats.",
+  "definitions": {
+    "website": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "url"],
+      "properties": {
+        "label": {"type": "string"},
+        "short": {"type": "string"},
+        "url":   {"type": "string"}
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["city", "state"],
+      "properties": {
+        "street": {"type": "string"},
+        "city":   {"type": "string"},
+        "state":  {"type": "string"},
+        "zip":    {"type": "string"}
+      }
+    }
+  }
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "contact", "skills", "jobs", "education"],
+  "properties": {
+    "name": {"type": "string" },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["email", "phone", "address", "websites"],
+      "properties": {
+        "email": {"type": "string"},
+        "phone": {"type": "string"},
+        "address": {"allOf": [
+          {"$ref": "#/definitions/location"},
+          {"type": "object", "required": ["street", "zip"]}
+        ]},
+        "websites": {
+          "type": "array",
+          "minLength": 1,
+          "items": {"$ref": "#/definitions/website"}
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "concepts": {
+          "type": "array",
+          "minLength": 1,
+          "items": {"type": "string"}
+        },
+        "languages": {
+          "type": "array",
+          "minLength": 1,
+          "items": {"type": "string"}
+        },
+        "frameworks": {
+          "type": "array",
+          "minLength": 1,
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "minLength": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "homepage", "bulletpoints"],
+        "properties": {
+          "title": {"type": "string"},
+          "language": {"type": "string"},
+          "homepage": {"$ref": "#/definitions/website"},
+          "mirrors": {
+            "type": "array",
+            "minLength": 1,
+            "items": {"$ref": "#/definitions/website"}
+          },
+          "bulletpoints": {
+            "type": "array",
+            "minLength": 1,
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "jobs": {
+      "type": "array",
+      "minLength": 1,
+      "items": "job": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["company","title", "location", "dates", "accomplishments"],
+        "properties": {
+          "company": {"type": "string"},
+          "title": {"type": "string"},
+          "location": {"$ref": "#/definitions/location"},
+          "dates": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["start"],
+            "properties": {
+              "start": {"type": "string"},
+              "end": {"type": "string"}
+            }
+          },
+          "languages": {
+            "type": "array",
+            "minLength": 1,
+            "items": {"type": "string"}
+          },
+          "accomplishments": {
+            "type": "array",
+            "minLength": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["summary"],
+              "properties": {
+                "summary": {"type": "string"},
+                "details": {
+                  "type": "array",
+                  "minLength": 1,
+                  "items": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "minLength": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "date", "source", "location"],
+        "properties": {
+          "title": {"type": "string"},
+          "date": {"type": "string"},
+          "source": {"type": "string"},
+          "location": {"$ref": "#/definitions/location"},
+          "courses": {
+            "type": "array",
+            "minLength": 1,
+            "items": {"type": "string"}
+          },
+          "projects": {
+            "type": "array",
+            "minLength": 1,
+            "items": {"$ref": "#/definitions/website"}
+          }
+        }
+      }
+    }
+  }
+}
