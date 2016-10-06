@@ -14,17 +14,17 @@ https://github.com/morgen-peschke
 # Skills & Languages
 
 #### Skills
-Web Programming, Database Design, OOP  
-POSIX and Windows programming APIs  
-Basic Linux administration, Parallel programming  
+Basic Functional Programming, OOP  
+Basic Linux administration, Web Programming  
+Database Design, Parallel programming  
 
 #### Programming Languages
-Java, Ruby, HTML  
-JavaScript, CSS, C/C++  
-Perl, Python, MySQL, Bash  
+Scala, Java, Ruby, HTML  
+JavaScript, CSS, Python  
+MySQL, Bash, C/C++  
 
 #### Frameworks
-Ruby on Rails, Java Swing
+Play, Java Swing, Ruby on Rails
 
 
 # Open Source Projects
@@ -41,8 +41,22 @@ Ruby on Rails, Java Swing
 
 # WORK EXPERIENCE
 
+#### TrueAccord :: Software Engineer :: Scala
+Jun 2015 - Present  
+Sunnyvale, CA
+
+##### Accomplishments 
+ * Lead our technical integration with a major bank
+   - Designed and implemented framework for integration via the FICO protocol
+   - Build compatibility layer for working with COBOL records
+   - Acted as local expert on the FICO specification
+ * Added ability to represent failed ACH payments
+   - Cleanly integrated new functionality into complicated payment logic
+   - Enabled analysts to track impact of ACH representation by providing detailed operational metrics
+   - Disabled the feature with a 1 line change, when impact was deemed undesirable
+
 #### SerialTek :: Software Engineer :: Java, C++
-Sept 2014 - Present  
+Sept 2014 - Jun 2015  
 San Jose, CA
 
 ##### Accomplishments 

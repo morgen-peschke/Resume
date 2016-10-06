@@ -15,14 +15,13 @@
 			   "url":   "https://github.com/morgen-peschke"}
 			 ]
 	    },
- "skills": {"concepts": ["Web Programming", "Database Design", "OOP",
-                         "POSIX and Windows programming APIs",
-                         "Basic Linux administration", "Parallel programming"
+ "skills": {"concepts": ["Basic Functional Programming", "OOP", "Basic Linux administration",
+                         "Web Programming", "Database Design", "Parallel programming"
                         ],
-            "languages": ["Java",  "Ruby", "HTML",   "JavaScript", "CSS",
-                          "C/C++", "Perl", "Python", "MySQL",      "Bash"
+            "languages": ["Scala", "Java",  "Ruby", "HTML", "JavaScript", "CSS",
+                          "Python", "MySQL", "Bash", "C/C++"
                          ],
-            "frameworks": ["Ruby on Rails", "Java Swing"]
+            "frameworks": ["Play", "Java Swing", "Ruby on Rails"]
 	   },
  "projects": [{"title":    "Table Name to Class Gem",
 	       "language": "Ruby - ActiveRecord",
@@ -47,18 +46,35 @@
                "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 	      }
 	     ],
- "jobs": [{"company": "SerialTek",
+ "jobs": [{"company": "TrueAccord",
+           "title": "Software Engineer",
+           "location": {"city": "Sunnyvale", "state": "CA"},
+           "dates":    {"start": "Jun 2015"},
+           "languages": ["Scala"],
+           "accomplishments": [
+             {"summary": "Lead our technical integration with a major bank",
+              "details": ["Designed and implemented framework for integration via the FICO protocol",
+                          "Build compatibility layer for working with COBOL records",
+                          "Acted as local expert on the FICO specification"
+                         ]},
+             {"summary": "Added ability to represent failed ACH payments",
+              "details": ["Cleanly integrated new functionality into complicated payment logic",
+                          "Enabled analysts to track impact of ACH representation by providing detailed operational metrics",
+                          "Disabled the feature with a 1 line change, when impact was deemed undesirable"
+                         ]}
+           ]
+          },
+          {"company": "SerialTek",
            "title": "Software Engineer",
            "location": {"city": "San Jose", "state": "CA"},
-           "dates":    {"start": "Sept 2014"},
+           "dates":    {"start": "Sept 2014", "end": "Jun 2015"},
            "languages": ["Java", "C++"],
            "accomplishments": [
              {"summary": "Engineered and implemented a major refactoring of our custom automated integration test framework",
               "details": ["Separated test and production code",
                           "Delivered greater flexibility and a shorter feedback cycle during test development",
                           "Enhanced granularity of feedback provided by tests"
-                         ]
-             },
+                         ]},
              {"summary": "Championed modernization of Java Coding Conventions",
               "details": ["Generated the rough draft of replacement conventions document",
                           "Drove the feedback-integration cycle",
