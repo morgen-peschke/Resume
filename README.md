@@ -46,7 +46,7 @@ Jun 2015 - Present
 Sunnyvale, CA
 
 ##### Accomplishments 
- * Lead our technical integration with a major bank
+ * Led our technical integration with a major bank
    - Designed and implemented framework for integration via the FICO protocol
    - Build compatibility layer for working with COBOL records
    - Acted as local expert on the FICO specification
