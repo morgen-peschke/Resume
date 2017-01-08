@@ -48,7 +48,7 @@ Sunnyvale, CA
 ##### Accomplishments 
  * Led our technical integration with a major bank
    - Designed and implemented framework for integration via the FICO protocol
-   - Build compatibility layer for working with COBOL records
+   - Built compatibility layer for working with COBOL records
    - Acted as local expert on the FICO specification
  * Added ability to represent failed ACH payments
    - Cleanly integrated new functionality into complicated payment logic

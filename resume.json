@@ -54,7 +54,7 @@
            "accomplishments": [
              {"summary": "Led our technical integration with a major bank",
               "details": ["Designed and implemented framework for integration via the FICO protocol",
-                          "Build compatibility layer for working with COBOL records",
+                          "Built compatibility layer for working with COBOL records",
                           "Acted as local expert on the FICO specification"
                          ]},
              {"summary": "Added ability to represent failed ACH payments",
