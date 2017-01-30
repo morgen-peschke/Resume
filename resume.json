@@ -18,12 +18,19 @@
  "skills": {"concepts": ["Basic Functional Programming", "OOP", "Basic Linux administration",
                          "Web Programming", "Database Design", "Parallel programming"
                         ],
-            "languages": ["Scala", "Java",  "Ruby", "HTML", "JavaScript", "CSS",
-                          "Python", "MySQL", "Bash", "C/C++"
+            "languages": ["Scala", "Java", "HTML", "JavaScript", "CSS", "Bash",
+                          "Python", "Ruby", "MySQL"
                          ],
             "frameworks": ["Play", "Java Swing", "Ruby on Rails"]
 	   },
- "projects": [{"title":    "Table Name to Class Gem",
+ "projects": [{"title":   "Scala Glob",
+               "language": "Scala",
+               "homepage": {"label": "GitHub",
+                            "url":   "https://github.com/morgen-peschke/scala-glob"
+                           },
+               "bulletpoints": ["Matches strings using shell glob syntax."]
+              },
+              {"title":    "Table Name to Class Gem",
 	       "language": "Ruby - ActiveRecord",
                "homepage": {"label": "rubygems.org",
                             "url":   "http://rubygems.org/gems/table-name-to-class"

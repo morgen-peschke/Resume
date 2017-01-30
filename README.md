@@ -19,15 +19,19 @@ Basic Linux administration, Web Programming
 Database Design, Parallel programming  
 
 #### Programming Languages
-Scala, Java, Ruby, HTML  
-JavaScript, CSS, Python  
-MySQL, Bash, C/C++  
+Scala, Java, HTML  
+JavaScript, CSS, Bash  
+Python, Ruby, MySQL  
 
 #### Frameworks
 Play, Java Swing, Ruby on Rails
 
 
 # Open Source Projects
+
+#### Scala Glob :: [GitHub](https://github.com/morgen-peschke/scala-glob)  :: Scala
+
+ * Matches strings using shell glob syntax.
 
 #### Table Name to Class Gem :: [rubygems.org](http://rubygems.org/gems/table-name-to-class)  :: Ruby - ActiveRecord
 
