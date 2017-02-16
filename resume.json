@@ -56,7 +56,7 @@
  "jobs": [{"company": "TrueAccord",
            "title": "Software Engineer",
            "location": {"city": "Sunnyvale", "state": "CA"},
-           "dates":    {"start": "Jun 2015"},
+           "dates":    {"start": "Jun 2015", "end": "Feb 2017"},
            "languages": ["Scala"],
            "accomplishments": [
              {"summary": "Led our technical integration with a major bank",

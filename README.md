@@ -46,7 +46,7 @@ Play, Java Swing, Ruby on Rails
 # WORK EXPERIENCE
 
 #### TrueAccord :: Software Engineer :: Scala
-Jun 2015 - Present  
+Jun 2015 - Feb 2017  
 Sunnyvale, CA
 
 ##### Accomplishments 
