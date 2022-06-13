@@ -21,10 +21,8 @@ Database Design, Parallel programming
 
 #### Programming Languages
 
-Scala, Java, HTML 
-JavaScript, CSS, Bash 
-Python, Ruby, MySQL 
-Redshift SQL 
+Scala, Java, HTML, JavaScript, CSS, Bash 
+Ruby, MySQL, Redshift SQL 
 
 
 #### Frameworks
@@ -59,11 +57,11 @@ Mountain View, CA
 
  * Redesigned registration architecture for increased conversion and maintainability
  
-   - Encoded registration flow as data, for increased visibility into user experience - paricularly when rendered to PDF
+   - Encoded registration flow as data, for increased visibility into user experience - particularly when rendered to PDF
  
-   - Encoded transformations as declarative data structure, for tracibility when implementing A/B testing and client-specific customizations
+   - Encoded transformations as declarative data structure, for traceability when implementing A/B testing and client-specific customizations
  
-   - Reduced maintenance burden from mutiple tickets per week to 1-2 tickets per sprint
+   - Reduced maintenance burden from multiple tickets per week to 1-2 tickets per sprint
  
  * Built cli client for registration
  
@@ -148,7 +146,7 @@ San Jose, CA
  * Refined and implemented NVMe filtering extension of existing PCIe filtering GUI
  
 
-#### CallTrackingMetrics :: Software Engineer :: Ruby, JavaScript HTML/CSS 
+#### CallTrackingMetrics :: Software Engineer :: Ruby, JavaScript, HTML/CSS 
 
 Feb 2014 - Jul 2014
 Severn, MD
@@ -180,7 +178,7 @@ Hanover, MD
  * Lead initial design and development of quiz-style recruiting website
  
 
-#### BYU-I, Computer Science Department :: Teaching Assistant :: C++, Perl, Bash JavaScript, Java 
+#### BYU-I, Computer Science Department :: Teaching Assistant :: C++, Perl, Bash, JavaScript, Java 
 
 Jan 2012 - Jun 2013
 Rexburg, ID

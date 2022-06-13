@@ -8,8 +8,8 @@
 {{email}}
 
 #### Websites
-{{#each websites}}{{url}}
-{{/each}}
+{{#websites}}{{url}}
+{{/websites}}
 
 {{~/contact}}
 {{~#skills}}
@@ -17,58 +17,58 @@
 
 #### Skills
 
-{{#each concepts~}}
-    {{~#each .}}{{value}}{{{delim}}} {{/each}}
-{{/each}}
+{{#concepts~}}
+    {{~#row}}{{cell}}{{{delim}}} {{/row}}
+{{/concepts}}
 
 #### Programming Languages
 
-{{#each languages~}}
-    {{~#each .}}{{value}}{{delim}} {{/each}}
-{{/each}}
+{{#languages~}}
+    {{~#row}}{{cell}}{{delim}} {{/row}}
+{{/languages}}
 
 #### Frameworks
 
-{{#each frameworks}}{{value}}{{delim}} {{/each}}
+{{#frameworks}}{{cell}}{{delim}} {{/frameworks}}
 
 {{/skills~}}
 
 # Open Source Projects
-{{#each projects}}
+{{#projects}}
 #### {{title}} :: {{#homepage}}[{{label}}]({{url}}) {{/homepage}}:: {{language}}
-{{#each bulletpoints}}
+{{#bulletpoints}}
  * {{.}}
-{{/each}}{{/each}}
+{{/bulletpoints}}{{/projects}}
 
 # WORK EXPERIENCE
-{{#each jobs}}
-#### {{company}} :: {{title}} :: {{#each languages}}{{#each .}}{{value}}{{delim}} {{/each}}{{/each}}
+{{#jobs}}
+#### {{company}} :: {{title}} :: {{#languages}}{{#row}}{{cell}}{{delim}} {{/row}}{{/languages}}
 
 {{#dates}}{{start}} - {{end}}{{/dates}}
-{{#location}}{{oneLine}}{{/location}}
+{{location.oneLine}}
 
 ##### Accomplishments
-{{#each accomplishments}}
+{{#accomplishments}}
  * {{summary}}
- {{#each details}}
+ {{#details}}
    - {{.}}
- {{/each}}{{/each}}
-{{/each}}
+ {{/details}}{{/accomplishments}}
+{{/jobs}}
 
 # EDUCATION
-{{#each education}}
+{{#education}}
 #### {{title}}
 
 {{source}}  
-{{#location}}{{oneLine}}{{/location}} - {{date}}
+{{location.oneLine}} - {{date}}
 
 ##### Courses
 
-{{#each courses}}{{#each .}}{{value}}{{delim}} {{/each}}
-{{/each}}
+{{#courses}}{{#row}}{{cell}}{{delim}} {{/row}}
+{{/courses}}
 ##### Projects
-{{#each projects}}
+{{#projects}}
   - {{label}}
     - {{url}}
-{{/each}}
-{{/each}}
+{{/projects}}
+{{/education}}

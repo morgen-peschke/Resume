@@ -19,42 +19,35 @@
 \name{<<name>>}
 % \address used up to three times to have up to three lines of address
 \address{
-  <<#contact>>
-  <<address>> \\
+  <<#contact~>>
+  <<address.oneLine>> \\
   <<phone>> - <<email>> \\
-  <<#websites>>
-  <<url>> \\
-  <</websites>>
-  <</contact>>
+<<#websites>>  <<url>> \\
+<</websites>><</contact~>>
 }
 
 \begin{resume}
   <<#skills>>
   \section{SKILLS \\ LANGUAGES}
-  <<#concepts.length>>
+
   \textbf{Skills} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#concept_lines>>{{48}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}} \\ {{/lines}}
-    <</concept_lines>>
+    <<#concepts>><<#row>><<cell>><<delim>> <</row>><<#unless last>> \\ <</unless>>
+    <</concepts>>
   \end{minipage}
-  <</concepts.length>>
-  <<#languages.length>>
+
   \textbf{Languages} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#language_lines>>{{20}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}} \\ {{/lines}}
-    <</language_lines>>
+    <<#languages>><<#row>><<cell>><<delim>> <</row>><<#unless last>> \\ <</unless>>
+    <</languages>>
   \end{minipage}
-  <</languages.length>>
-  <<#frameworks.length>>
+
   \textbf{Frameworks} \hfill
   \begin{minipage}[t]{0.8\textwidth}
-    <<#frameworks>><<.>><<delim>><</frameworks>>
+    <<#frameworks>><<cell>><<delim>> <</frameworks>>
   \end{minipage}
-  <</frameworks.length>>
 
-  <<#projects.length>>
   \section{PROJECTS}
-  <</projects.length>>
   <<#projects>>
   \textbf{<<title>>} \hfill <<#homepage>><<short>><</homepage>> \\
   \textsc{<<language>>}
@@ -65,62 +58,51 @@
   <</projects>>
   <</skills>>
 
-  <<#jobs.length>>
   \section{WORK \\ EXPERIENCE}
-  <</jobs.length>>
   <<#jobs>>
   \begin{minipage}{\textwidth}
     \textbf{<<title>>} \hfill <<#dates>><<start>> - <<end>><</dates>>
 
     \textsc{<<company>>} \hfill
-    <<location>>
+    <<location.oneLine>>
 
-    \small{<<#languages>><<.>><<delim>><</languages>>}
+    \small{<<#languages>><<#row>><<cell>><<delim>> <</row>><</languages>>}
     \vspace{0.5em}
     \begin{itemize} \itemsep -1pt
       <<#accomplishments>>
     \item
       <<summary>>
-      <<#details.length>>
+      <<#if details>>
       \begin{itemize}
         <<#details>>
       \item <<.>>
         <</details>>
       \end{itemize}
-      <</details.length>>
+      <</if>>
       <</accomplishments>>
     \end{itemize}
   \end{minipage}
-
   <</jobs>>
 
-  <<#education.length>>
   \section{EDUCATION}
-  <</education.length>>
   <<#education>>
   \begin{minipage}{\textwidth}
     \textbf{<<title>>} \hfill <<date>>\\
-    \textsc{<<source>>} \hfill <<location>>\\
+    \textsc{<<source>>} \hfill <<location.oneLine>>\\
 
-    <<#courses.length>>
-    {\bf Relevant Coursework}\\
+    {\textbf Relevant Coursework}\\
     {\raggedright
       <<#courses>>
-      <<.>><<delim>>
+      <<#row>><<cell>><<delim>> <</row>> \\
       <</courses>>
     }
-    \\
 
-    <</courses.length>>
-    <<#projects.length>>
-
-    {\bf Projects}
+    {\textbf Projects}
     \begin{itemize}
       <<#projects>>
-    \item <<label>> \\ <<url>>
+    \item <<{label}>> \\ <<url>>
       <</projects>>
     \end{itemize}
-    <</projects.length>>
   \end{minipage}
   <</education>>
 \end{resume}
