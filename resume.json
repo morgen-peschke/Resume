@@ -15,11 +15,11 @@
 			   "url":   "https://github.com/morgen-peschke"}
 			 ]
 	    },
- "skills": {"concepts": ["Basic Functional Programming", "OOP", "Basic Linux administration",
+ "skills": {"concepts": ["Functional Programming", "OOP", "Basic Linux administration",
                          "Web Programming", "Database Design", "Parallel programming"
                         ],
             "languages": ["Scala", "Java", "HTML", "JavaScript", "CSS", "Bash",
-                          "Python", "Ruby", "MySQL"
+                          "Python", "Ruby", "MySQL", "Redshift SQL"
                          ],
             "frameworks": ["Play", "Java Swing", "Ruby on Rails"]
 	   },
@@ -53,7 +53,46 @@
                "bulletpoints": ["Provides simplified handling of parsed data through linked attributes."]
 	      }
 	     ],
- "jobs": [{"company": "TrueAccord",
+ "jobs": [{"company": "Livongo | Teladoc",
+	   "title": "Staff Software Engineer",
+	   "location": {"city": "Mountain View", "state": "CA"},
+	   "dates":    {"start": "Feb 2017" },
+	   "languages": ["Scala", "SQL", "Bash"],
+	   "accomplishments": [
+	       {"summary": "Redesigned registration architecture for increased conversion and maintainability",
+		"details": ["Encoded registration flow as data, for increased visibility into user experience - paricularly when rendered to PDF",
+			    "Encoded transformations as declarative data structure, for tracibility when implementing A/B testing and client-specific customizations",
+			    "Reduced maintenance burden from mutiple tickets per week to 1-2 tickets per sprint"
+		]
+	       },
+	       {"summary": "Built cli client for registration",
+		"details": ["Enabled scripting the registration experience, greatly improving bug reproducibility",
+			    "Generated random valid answers enabled reproducing and debugging without tripping duplicate account checks",
+			    "Rendering registration flows to PDF greatly eased communication with Product and Design teams"
+		]
+	       },
+	       {"summary": "Designed and build tooling to ingest client data files using an ingestion specification",
+		"details": ["Normalized structure from CSV, Fixed Width, and XML files to a standard structure",
+			    "Normalized and mapped fields from customer input formats to standard format",
+			    "Reported errors with breadcrumbs to record and field in input file, regardless of input type"
+		    
+		]
+	       },
+	       {"summary": "Designed and built ingestion pipeline for recruitable population",
+		"details": ["Provided unification of records from various files based on common identity critiera",
+			    "Calculated eligiblity and inferred diagnoses to guide outreach",
+			    "Gathered user data into a standard set of fields for use during outreach and registration"
+		]
+	       },
+	       {"summary": "Refined and made generic a fuzzy matching library to increase registration conversion",
+		"details": ["Enabled skipping multiple steps during registration",
+			    "Rule-based fuzzy matching allowed the creation of a batch version to close data gaps",
+			    "Later leveraged to identify and prevent creation of duplicate accounts"
+		]
+	       }
+	   ]
+	  },
+	  {"company": "TrueAccord",
            "title": "Software Engineer",
            "location": {"city": "Sunnyvale", "state": "CA"},
            "dates":    {"start": "Jun 2015", "end": "Feb 2017"},
