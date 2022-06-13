@@ -1,98 +1,74 @@
-{{! -*- markdown -*- }}
 # {{name}}
-{{#contact}}  
-{{#address}}{{#first_line}}{{.}}  
-{{/first_line}}{{#second_line}}{{.}}  
-{{/second_line}}{{/address}}
-{{phone}}  
-{{email}}  
-{{#websites.length}}
+{{#contact}}
+{{#address~}}
+{{#first_line}}{{.}}{{/first_line}}
+{{second_line}}
+{{/address}}
+{{phone}}
+{{email}}
 
 #### Websites
-{{/websites.length}}
-{{#websites}}{{url}}  
+{{#websites}}{{url}}
 {{/websites}}
 
-{{/contact}}
-{{#skills}}
-
+{{~/contact}}
+{{~#skills}}
 # Skills & Languages
-{{#concepts.length}}
 
 #### Skills
-{{/concepts.length}}
-{{#concept_lines}}{{48}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
-{{/lines}}
-{{/concept_lines}}
-{{#languages.length}}
+
+{{#concepts~}}
+    {{~#row}}{{cell}}{{{delim}}} {{/row}}
+{{/concepts}}
 
 #### Programming Languages
-{{/languages.length}}
-{{#language_lines}}{{20}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
-{{/lines}}
-{{/language_lines}}
-{{#frameworks.length}}
+
+{{#languages~}}
+    {{~#row}}{{cell}}{{delim}} {{/row}}
+{{/languages}}
 
 #### Frameworks
-{{/frameworks.length}}
-{{#frameworks}}{{.}}{{delim}}{{/frameworks}}
 
-{{/skills}}
-{{#projects.length}}
+{{#frameworks}}{{cell}}{{delim}} {{/frameworks}}
+
+{{/skills~}}
 
 # Open Source Projects
-
-{{/projects.length}}
 {{#projects}}
-#### {{title}} :: {{#homepage}}[{{label}}]({{url}}) {{/homepage}} :: {{language}}
-
+#### {{title}} :: {{#homepage}}[{{label}}]({{url}}) {{/homepage}}:: {{language}}
 {{#bulletpoints}}
  * {{.}}
-{{/bulletpoints}}
-
-{{/projects}}
-{{#jobs.length}}
+{{/bulletpoints}}{{/projects}}
 
 # WORK EXPERIENCE
-
-{{/jobs.length}}
 {{#jobs}}
-#### {{company}} :: {{title}} :: {{#languages}}{{.}}{{delim}}{{/languages}}
-{{#dates}}{{start}} - {{end}}{{/dates}}  
-{{location}}
+#### {{company}} :: {{title}} :: {{#languages}}{{#row}}{{cell}}{{delim}} {{/row}}{{/languages}}
 
-##### Accomplishments 
+{{#dates}}{{start}} - {{end}}{{/dates}}
+{{location.oneLine}}
+
+##### Accomplishments
 {{#accomplishments}}
  * {{summary}}
  {{#details}}
    - {{.}}
- {{/details}}
-{{/accomplishments}}
-
+ {{/details}}{{/accomplishments}}
 {{/jobs}}
-{{#education.length}}
 
 # EDUCATION
-
-{{/education.length}}
 {{#education}}
 #### {{title}}
+
 {{source}}  
-{{location}} - {{date}}
+{{location.oneLine}} - {{date}}
 
-{{#courses.length}}
 ##### Courses
-{{/courses.length}}
-{{#course_lines}}{{40}}{{#lines}}{{#value}}{{.}}{{delim}}{{/value}}  
-{{/lines}}
-{{/course_lines}}
 
-{{#projects.length}}
+{{#courses}}{{#row}}{{cell}}{{delim}} {{/row}}
+{{/courses}}
 ##### Projects
-{{/projects.length}}
 {{#projects}}
   - {{label}}
     - {{url}}
-
 {{/projects}}
 {{/education}}
