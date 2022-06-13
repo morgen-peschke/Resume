@@ -26,7 +26,7 @@ abstract class ListWrapper[A: Encoder : Decoder: Show](maxColumnLengthOpt: Optio
     maxColumnLengthOpt match {
       case None =>
         Encoder.instance[Type] { t =>
-          wrapRow(raw(t).map(_.asJson)).asJson
+          wrapRow(raw(t).map(_.asJson))
         }
       case Some(maxColumnLength) =>
         Encoder.instance[Type] { t =>
@@ -56,27 +56,37 @@ abstract class ListWrapper[A: Encoder : Decoder: Show](maxColumnLengthOpt: Optio
                 else loop(remaining, accum.append(currentLine), Chain.one(headJson), headLength)
             }
 
-          loop(raw(t).map(_.asJson), Chain.empty, Chain.empty, 0)
-            .map(wrapRow(_).asJson)
-            .asJson
+          wrapTable(loop(raw(t).map(_.asJson), Chain.empty, Chain.empty, 0))
         }
     }
 
-  private def wrapRow(as: List[Json]): List[Json] = {
+  private def wrapTable(table: List[List[Json]]): Json =
+    wrapList(table.map(wrapRow), "row", Json.Null).asJson
+
+  private def wrapRow(row: List[Json]): Json =
+    wrapList(row, "cell", Json.fromString(",")).asJson
+
+  private def wrapList(as: List[Json], entryName: String, delim: Json): List[Json] = {
     val lastIndex = as.length - 1
     as.zipWithIndex.map {
-      case (a, i) => wrapEntry(a, i, i === 0, i === lastIndex)
+      case (a, i) => wrapEntry(entryName, a, i, i === 0, i === lastIndex, delim)
     }
   }
 
-  private def wrapEntry(value: Json, index: Int, isFirst: Boolean, isLast: Boolean): Json =
+  private def wrapEntry(entryName: String,
+                        value: Json,
+                        index: Int,
+                        isFirst: Boolean,
+                        isLast: Boolean,
+                        delim: Json): Json = {
     Json.obj(
-      "value" -> value,
+      entryName -> value,
       "index" -> Json.fromInt(index),
       "first" -> (if (isFirst) Json.True else Json.Null),
       "last" -> (if (isLast) Json.True else Json.Null),
-      "delim" -> (if (isLast) Json.Null else Json.fromString(","))
+      "delim" -> (if (isLast) Json.Null else delim)
     ).dropNullValues
+  }
 
   implicit final val show: Show[Type] = Show.show(raw(_).show)
 }

@@ -27,8 +27,18 @@ object Formatter extends CommandIOApp(
     }
 
   def write(path: os.Path, contents: String): IO[ExitCode] = IO.blocking {
-    os.write.over(path, contents, createFolders = true)
+    val mungedContents = if(path.baseName.endsWith(".tex")) laTeXFixes(contents) else contents
+    os.write.over(path, mungedContents, createFolders = true)
     ExitCode.Success
+  }
+
+  def laTeXFixes(input: String): String = {
+    input
+      .replaceAllLiterally(raw"\", raw"\t-e-x-t-b-a-c-k-s-l-a-s-h")
+      .replaceAll(raw"([#$$%&_{}])", raw"\\\1")
+      .replaceAllLiterally("^",raw"\textasciicircum{}")
+      .replaceAllLiterally("~",raw"\textasciitilde{}")
+      .replaceAll(raw"\t-e-x-t-b-a-c-k-s-l-a-s-h([^{])", raw"\textbackslash{}\1")
   }
 
   def render(json: Json, template: String): IO[String] =
