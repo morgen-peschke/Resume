@@ -19,7 +19,7 @@
                          "Web Programming", "Database Design", "Parallel programming"
                         ],
             "languages": ["Scala", "Java", "HTML", "JavaScript", "CSS", "Bash",
-                          "Python", "Ruby", "MySQL", "Redshift SQL"
+                          "Ruby", "MySQL", "Redshift SQL"
                          ],
             "frameworks": ["Play", "Java Swing", "Ruby on Rails"]
 	   },
@@ -60,9 +60,9 @@
 	   "languages": ["Scala", "SQL", "Bash"],
 	   "accomplishments": [
 	       {"summary": "Redesigned registration architecture for increased conversion and maintainability",
-		"details": ["Encoded registration flow as data, for increased visibility into user experience - paricularly when rendered to PDF",
-			    "Encoded transformations as declarative data structure, for tracibility when implementing A/B testing and client-specific customizations",
-			    "Reduced maintenance burden from mutiple tickets per week to 1-2 tickets per sprint"
+		"details": ["Encoded registration flow as data, for increased visibility into user experience - particularly when rendered to PDF",
+			    "Encoded transformations as declarative data structure, for traceability when implementing A/B testing and client-specific customizations",
+			    "Reduced maintenance burden from multiple tickets per week to 1-2 tickets per sprint"
 		]
 	       },
 	       {"summary": "Built cli client for registration",
